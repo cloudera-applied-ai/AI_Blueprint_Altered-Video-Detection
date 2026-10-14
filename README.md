@@ -1,9 +1,9 @@
 # Cloudera Blueprint: Synthetic Video Detector
 
+[![Author-Kevin Talbert](https://img.shields.io/badge/Author-Kevin%20Talbert-555555)](https://github.com/kevinbtalbert)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](pyproject.toml)
 [![Cloudera Blueprint](https://img.shields.io/badge/Cloudera-Blueprint-f96702.svg)](METADATA.yaml)
-[![Author-Kevin Talbert](https://img.shields.io/badge/Author-Kevin%20Talbert-555555)]()
 [![Stars](https://img.shields.io/github/stars/cloudera-applied-ai/AI_Blueprint_Altered-Video-Detection?logo=github&cacheSeconds=300)](https://github.com/cloudera-applied-ai/AI_Blueprint_Altered-Video-Detection/stargazers)
 [![Forks](https://img.shields.io/github/forks/cloudera-applied-ai/AI_Blueprint_Altered-Video-Detection?logo=github&cacheSeconds=300)](https://github.com/cloudera-applied-ai/AI_Blueprint_Altered-Video-Detection/network/members)
 
