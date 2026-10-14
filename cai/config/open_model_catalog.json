@@ -1,0 +1,76 @@
+{
+  "default_preset_id": "videomae-ffc23",
+  "presets": [
+    {
+      "id": "videomae-ffc23",
+      "name": "VideoMAE Deepfake Detector",
+      "subtitle": "Temporal video model · FaceForensics++",
+      "hf_model_id": "eftt/VideoMae-ffc23-deepfake-detector",
+      "kind": "videomae",
+      "aggregate": "median",
+      "recommended": false,
+      "vram_gb": 8,
+      "tags": ["Video-native", "Binary real/fake", "Research / FF++"],
+      "summary": "Community VideoMAE fine-tuned on FaceForensics++—best for demos and offline GPU use. Expect domain shift vs full-scene consumer MP4; for NVIDIA-calibrated production scoring use Serverless (NVCF).",
+      "metrics_hint": "~88% accuracy · ~0.84 AUC on FF++ (per model card)",
+      "hf_url": "https://huggingface.co/eftt/VideoMae-ffc23-deepfake-detector",
+      "more_info": {
+        "what_it_offers": "Binary real vs fake scores using 16-frame VideoMAE clips—temporal patterns across the video, not single frames.",
+        "best_for": "Face-centric manipulation similar to FaceForensics++ (deepfakes, reenactment-style clips), offline GPU inference in your CAI pod.",
+        "limitations": "Trained on an FF++ subset; may not match NVIDIA-hosted Synthetic Video Detector on general consumer MP4. Needs visible faces and reasonable resolution.",
+        "highlights": [
+          "Base: MCG-NJU/videomae-base (Kinetics-pretrained)",
+          "Fine-tuned on FaceForensics++ at C23 compression",
+          "Labels: real (0) vs fake (1); ~86M parameters",
+          "Inputs: 16 frames sampled per window, 224×224"
+        ]
+      }
+    },
+    {
+      "id": "ai-deepfake-real-v2",
+      "name": "AI vs Deepfake vs Real",
+      "subtitle": "SigLIP encoder · three-way classification",
+      "hf_model_id": "prithivMLmods/AI-vs-Deepfake-vs-Real-v2.0",
+      "kind": "image",
+      "recommended": false,
+      "vram_gb": 6,
+      "tags": ["Frame sampling", "3-class"],
+      "summary": "Separates fully AI-generated, deepfake-manipulated, and authentic stills—aggregated over sampled video frames.",
+      "metrics_hint": "Useful when you need to distinguish full AI synthesis from face-swap deepfakes",
+      "hf_url": "https://huggingface.co/prithivMLmods/AI-vs-Deepfake-vs-Real-v2.0",
+      "more_info": {
+        "what_it_offers": "Three-way classification (AI-generated vs deepfake-manipulated vs real) on sampled frames, rolled up to a video-level synthetic score.",
+        "best_for": "Editorial triage when you care about the type of manipulation, not only binary synthetic probability.",
+        "limitations": "Frame-based SigLIP path—not full temporal VideoMAE. Requires torchvision in the runtime image. Heavier than the ViT preset.",
+        "highlights": [
+          "SigLIP vision encoder with a classification head",
+          "Aggregates scores across uniformly sampled frames",
+          "See the model card for class definitions and training data"
+        ]
+      }
+    },
+    {
+      "id": "deepfake-vs-real-image",
+      "name": "Deepfake vs Real (ViT)",
+      "subtitle": "Lightweight binary classifier",
+      "hf_model_id": "dima806/deepfake_vs_real_image_detection",
+      "kind": "image",
+      "recommended": false,
+      "vram_gb": 4,
+      "tags": ["Frame sampling", "Fast startup"],
+      "summary": "Compact ViT-style binary detector—good for demos, smoke tests, and smaller GPUs.",
+      "metrics_hint": "Lower VRAM · faster cold start than VideoMAE",
+      "hf_url": "https://huggingface.co/dima806/deepfake_vs_real_image_detection",
+      "more_info": {
+        "what_it_offers": "Fast binary fake vs real classification on sampled frames with lower GPU memory than VideoMAE.",
+        "best_for": "Smoke tests, smaller GPUs, and quick Launchpad demos when temporal modeling is not required.",
+        "limitations": "Image classifier on frame samples—misses temporal cues that VideoMAE targets. Same domain-shift caveats as other open HF checkpoints.",
+        "highlights": [
+          "ViT-based image classification checkpoint",
+          "Good default when VRAM or startup time is tight",
+          "Pair with short, face-forward clips for clearer results"
+        ]
+      }
+    }
+  ]
+}

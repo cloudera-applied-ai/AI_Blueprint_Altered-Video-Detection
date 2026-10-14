@@ -1,0 +1,17 @@
+:root {
+  --accent: #76b900;
+  --accent-muted: rgba(118, 185, 0, 0.08);
+  --accent-dim: #5a9200;
+  --page-bg: #030303;
+  --surface: #0c0c0e;
+  --surface-elevated: #121216;
+  --border: #27272a;
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --nvidia-green: var(--accent);
+  --danger: #f87171;
+  --warning: #fbbf24;
+  --radius-lg: 0.75rem;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 8px 32px rgba(0, 0, 0, 0.45);
+}

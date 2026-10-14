@@ -1,0 +1,3755 @@
+================================================================================
+================================================================================
+
+ Third-Party Software for Altered Video Detection
+
+--------------------------------------------------------------------------------
+
+The product or component covered by this notice file is subject to copyright owned by Cloudera, the Apache Software Foundation or other third parties, as applicable, and the copyright owner reserves all rights.
+
+The following notices and licenses apply to various third party software packages, including open source software packages, which are distributed with the product identified in this file or accompanying this file.  Such product (i) may not include all of the referenced third party software packages or include only a portion of a given package and (ii) may also include other components, which may contain additional third party software packages as identified in their separate respective notice files.
+
+To the extent required by the license associated with a third party software package, Cloudera, Inc. will provide a copy of the third party software package’s source code upon request and at a reasonable fee.  All requests for source code must be made in writing and mailed to "Cloudera, Inc., ATTN: Legal Dept.,5470 Great America Pkwy, Santa Clara, CA 95054" and include the following information: (i) the name and version number of the covered binary, (ii) name and the version number of the Cloudera product containing the covered binary, (iii) your name, (iv) your company or organization name (if applicable), (v) the license under which you are requesting the source code to be provided, and (vi) your return mailing and email address (if available).
+
+The following 3rd-party software packages may be used by or distributed with Synthetic-Video-Detector-AI-Blueprint (RELENG-37873). Any information relevant to third-party vendors listed below are collected using common, reasonable means.
+
+Date generated: 2026-10-7
+
+Revision ID: 641eaeec1601fe325a8028d95b2fdd67f1d6c468
+
+================================================================================
+================================================================================
+
+
+
+================================================================================
+
+                                  Dependencies
+
+================================================================================
+
+- @emnapi/runtime (1.11.3) [MIT, 0BSD]
+- @epic-web/invariant (1.0.0) [MIT]
+- @img/colour (1.1.0) [MIT]
+- @img/sharp-darwin-arm64 (0.34.5) [Apache-2.0]
+- @img/sharp-darwin-x64 (0.34.5) [Apache-2.0]
+- @img/sharp-libvips-darwin-arm64 (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-darwin-x64 (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-linux-arm (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-linux-arm64 (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-linux-ppc64 (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-linux-riscv64 (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-linux-s390x (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-linux-x64 (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-linuxmusl-arm64 (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-libvips-linuxmusl-x64 (1.2.4) [LGPL-3.0-or-later, FTL]
+- @img/sharp-linux-arm (0.34.5) [Apache-2.0]
+- @img/sharp-linux-arm64 (0.34.5) [Apache-2.0]
+- @img/sharp-linux-ppc64 (0.34.5) [Apache-2.0]
+- @img/sharp-linux-riscv64 (0.34.5) [Apache-2.0]
+- @img/sharp-linux-s390x (0.34.5) [Apache-2.0]
+- @img/sharp-linux-x64 (0.34.5) [Apache-2.0]
+- @img/sharp-linuxmusl-arm64 (0.34.5) [Apache-2.0]
+- @img/sharp-linuxmusl-x64 (0.34.5) [Apache-2.0]
+- @img/sharp-wasm32 (0.34.5) [MIT, LGPL-3.0-or-later, Apache-2.0]
+- @img/sharp-win32-arm64 (0.34.5) [LGPL-3.0-or-later, Apache-2.0, FTL]
+- @img/sharp-win32-ia32 (0.34.5) [LGPL-3.0-or-later, Apache-2.0, FTL]
+- @img/sharp-win32-x64 (0.34.5) [LGPL-3.0-or-later, Apache-2.0, FTL]
+- @next/env (15.5.20) [MIT]
+- @next/swc-darwin-arm64 (15.5.20) [MIT]
+- @next/swc-darwin-x64 (15.5.20) [MIT]
+- @next/swc-linux-arm64-gnu (15.5.20) [MIT]
+- @next/swc-linux-arm64-musl (15.5.20) [MIT]
+- @next/swc-linux-x64-gnu (15.5.20) [MIT]
+- @next/swc-linux-x64-musl (15.5.20) [MIT]
+- @next/swc-win32-arm64-msvc (15.5.20) [MIT]
+- @next/swc-win32-x64-msvc (15.5.20) [MIT]
+- @swc/helpers (0.5.15) [Apache-2.0]
+- attr-accept (2.2.5) [MIT]
+- caniuse-lite (1.0.30001810) [CC-BY-4.0]
+- client-only (0.0.1) [MIT]
+- cross-env (10.1.0) [MIT]
+- cross-spawn (7.0.6) [MIT]
+- detect-libc (2.1.2) [Apache-2.0]
+- file-selector (2.1.2) [MIT, 0BSD]
+- isexe (2.0.0) [ISC]
+- js-tokens (4.0.0) [MIT]
+- loose-envify (1.4.0) [MIT]
+- nanoid (3.3.18) [MIT]
+- next (15.5.20) [MIT, BSD-3-Clause, BSD-2-Clause, Apache-2.0, ISC, CC-BY-SA-4.0, CC0-1.0, MPL-2.0]
+- object-assign (4.1.1) [MIT]
+- packaging (26.0) [BSD-3-Clause, BSD-2-Clause, Apache-2.0, MIT]
+- path-key (3.1.1) [MIT]
+- picocolors (1.1.1) [ISC]
+- postcss (8.4.31) [MIT]
+- prop-types (15.8.1) [MIT]
+- python-dotenv (1.2.2) [BSD-3-Clause]
+- react (19.2.5) [MIT]
+- react-dom (19.2.5) [MIT]
+- react-dropzone (14.3.8) [MIT]
+- react-is (16.13.1) [MIT]
+- requests (2.33.1) [MIT]
+- scheduler (0.27.0) [MIT]
+- semver (7.8.5) [ISC]
+- sharp (0.34.5) [Apache-2.0, MIT]
+- shebang-command (2.0.0) [MIT]
+- shebang-regex (3.0.0) [MIT]
+- source-map-js (1.2.1) [BSD-3-Clause]
+- styled-jsx (5.1.6) [MIT, BSD-3-Clause]
+- tslib (2.8.1) [0BSD]
+- urllib3 (2.7.0) [MIT, MPL-2.0]
+- which (2.0.2) [ISC]
+
+--------------------------------------------------------------------------------
+Package Title: @emnapi/runtime (1.11.3)
+
+Package Locator: npm+@emnapi/runtime$1.11.3
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+emnapi runtime
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2021 present Toyobayashi
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+0BSD
+--------------------------------------------------------------------------------
+File matches:
+- dist/emnapi.iife.js
+  - Copyright (c)  Microsoft Corporation.
+- dist/emnapi.js
+  - Copyright (c)  Microsoft Corporation.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2021 present Toyobayashi
+0BSD
+- Copyright (c)  Microsoft Corporation.
+
+* Package Info *
+
+Authors: lifenglin314@outlook.com
+Package Manager: NPM
+Project URL: https://github.com/toyobayashi/emnapi#readme
+Package Download URL: https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.11.3.tgz
+Dependency Path: next > sharp > @img/sharp-wasm32 > @emnapi/runtime
+
+--------------------------------------------------------------------------------
+Package Title: @epic-web/invariant (1.0.0)
+
+Package Locator: npm+@epic-web/invariant$1.0.0
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Type safe utilities for throwing errors (and responses) if things aren't quite right. Inspired by npm.im/invariant
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: me+epic-web-bot@kentcdodds.com, me@kentcdodds.com
+Package Manager: NPM
+Project URL: https://github.com/epicweb-dev/invariant#readme
+Package Download URL: https://registry.npmjs.org/@epic-web/invariant/-/invariant-1.0.0.tgz
+Dependency Path: cross-env > @epic-web/invariant
+
+--------------------------------------------------------------------------------
+Package Title: @img/colour (1.1.0)
+
+Package Locator: npm+@img/colour$1.1.0
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+The ESM-only 'color' package made compatible for use with CommonJS runtimes
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE.md
+  - Copyright (c) 2011 Heather Arthur <fayearthur@gmail.com>
+  - Copyright (c) 2011-2016 Heather Arthur <fayearthur@gmail.com>.
+  - Copyright (c) 2012 Heather Arthur
+  - Copyright (c) 2015 Dmitry Ivanov
+  - Copyright (c) 2016-2021 Josh Junon <josh@junon.me>.
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2012 Heather Arthur
+- Copyright (c) 2011-2016 Heather Arthur <fayearthur@gmail.com>.
+- Copyright (c) 2016-2021 Josh Junon <josh@junon.me>.
+- Copyright (c) 2011 Heather Arthur <fayearthur@gmail.com>
+- Copyright (c) 2015 Dmitry Ivanov
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://github.com/lovell/colour#readme
+Package Download URL: https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz
+Dependency Path: next > sharp > @img/colour
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-darwin-arm64 (0.34.5)
+
+Package Locator: npm+@img/sharp-darwin-arm64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with macOS 64-bit ARM
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-darwin-arm64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-darwin-x64 (0.34.5)
+
+Package Locator: npm+@img/sharp-darwin-x64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with macOS x64
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-darwin-x64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-darwin-arm64 (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-darwin-arm64$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on macOS 64-bit ARM
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-darwin-arm64 > @img/sharp-libvips-darwin-arm64 > next > sharp > @img/sharp-libvips-darwin-arm64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-darwin-x64 (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-darwin-x64$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on macOS x64
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-darwin-x64 > @img/sharp-libvips-darwin-x64 > next > sharp > @img/sharp-libvips-darwin-x64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-linux-arm (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-linux-arm$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on Linux (glibc) 32-bit ARM
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-linux-arm/-/sharp-libvips-linux-arm-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-libvips-linux-arm > next > sharp > @img/sharp-linux-arm > @img/sharp-libvips-linux-arm
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-linux-arm64 (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-linux-arm64$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on Linux (glibc) 64-bit ARM
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-linux-arm64/-/sharp-libvips-linux-arm64-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-libvips-linux-arm64 > next > sharp > @img/sharp-linux-arm64 > @img/sharp-libvips-linux-arm64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-linux-ppc64 (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-linux-ppc64$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on Linux (glibc) ppc64le
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-linux-ppc64/-/sharp-libvips-linux-ppc64-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-libvips-linux-ppc64 > next > sharp > @img/sharp-linux-ppc64 > @img/sharp-libvips-linux-ppc64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-linux-riscv64 (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-linux-riscv64$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on Linux (glibc) RISC-V 64-bit
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-linux-riscv64/-/sharp-libvips-linux-riscv64-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-libvips-linux-riscv64 > next > sharp > @img/sharp-linux-riscv64 > @img/sharp-libvips-linux-riscv64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-linux-s390x (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-linux-s390x$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on Linux (glibc) s390x
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-linux-s390x/-/sharp-libvips-linux-s390x-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-libvips-linux-s390x > next > sharp > @img/sharp-linux-s390x > @img/sharp-libvips-linux-s390x
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-linux-x64 (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-linux-x64$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on Linux (glibc) x64
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-libvips-linux-x64 > next > sharp > @img/sharp-linux-x64 > @img/sharp-libvips-linux-x64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-linuxmusl-arm64 (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-linuxmusl-arm64$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on Linux (musl) 64-bit ARM
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-linuxmusl-arm64/-/sharp-libvips-linuxmusl-arm64-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-libvips-linuxmusl-arm64 > next > sharp > @img/sharp-linuxmusl-arm64 > @img/sharp-libvips-linuxmusl-arm64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-libvips-linuxmusl-x64 (1.2.4)
+
+Package Locator: npm+@img/sharp-libvips-linuxmusl-x64$1.2.4
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt libvips and dependencies for use with sharp on Linux (musl) x64
+
+* Declared Licenses *
+LGPL-3.0-or-later
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-libvips-linuxmusl-x64/-/sharp-libvips-linuxmusl-x64-1.2.4.tgz
+Dependency Path: next > sharp > @img/sharp-libvips-linuxmusl-x64 > next > sharp > @img/sharp-linuxmusl-x64 > @img/sharp-libvips-linuxmusl-x64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-linux-arm (0.34.5)
+
+Package Locator: npm+@img/sharp-linux-arm$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Linux (glibc) ARM (32-bit)
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-linux-arm/-/sharp-linux-arm-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-linux-arm
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-linux-arm64 (0.34.5)
+
+Package Locator: npm+@img/sharp-linux-arm64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Linux (glibc) 64-bit ARM
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-linux-arm64/-/sharp-linux-arm64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-linux-arm64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-linux-ppc64 (0.34.5)
+
+Package Locator: npm+@img/sharp-linux-ppc64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Linux (glibc) ppc64
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-linux-ppc64/-/sharp-linux-ppc64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-linux-ppc64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-linux-riscv64 (0.34.5)
+
+Package Locator: npm+@img/sharp-linux-riscv64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Linux (glibc) RISC-V 64-bit
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-linux-riscv64/-/sharp-linux-riscv64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-linux-riscv64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-linux-s390x (0.34.5)
+
+Package Locator: npm+@img/sharp-linux-s390x$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Linux (glibc) s390x
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-linux-s390x/-/sharp-linux-s390x-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-linux-s390x
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-linux-x64 (0.34.5)
+
+Package Locator: npm+@img/sharp-linux-x64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Linux (glibc) x64
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-linux-x64/-/sharp-linux-x64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-linux-x64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-linuxmusl-arm64 (0.34.5)
+
+Package Locator: npm+@img/sharp-linuxmusl-arm64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Linux (musl) 64-bit ARM
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-linuxmusl-arm64/-/sharp-linuxmusl-arm64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-linuxmusl-arm64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-linuxmusl-x64 (0.34.5)
+
+Package Locator: npm+@img/sharp-linuxmusl-x64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Linux (musl) x64
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-linuxmusl-x64/-/sharp-linuxmusl-x64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-linuxmusl-x64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-wasm32 (0.34.5)
+
+Package Locator: npm+@img/sharp-wasm32$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with WebAssembly
+
+* Declared Licenses *
+MIT, LGPL-3.0-or-later, Apache-2.0
+
+* MIT *
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* LGPL-3.0-or-later *
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Apache-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-wasm32/-/sharp-wasm32-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-wasm32
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-win32-arm64 (0.34.5)
+
+Package Locator: npm+@img/sharp-win32-arm64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Windows 64-bit ARM
+
+* Declared Licenses *
+LGPL-3.0-or-later, Apache-2.0
+
+* LGPL-3.0-or-later *
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Apache-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+FTL
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-win32-arm64/-/sharp-win32-arm64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-win32-arm64
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-win32-ia32 (0.34.5)
+
+Package Locator: npm+@img/sharp-win32-ia32$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Windows x86 (deprecated)
+
+* Declared Licenses *
+LGPL-3.0-or-later, Apache-2.0
+
+* LGPL-3.0-or-later *
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Apache-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+FTL
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-win32-ia32/-/sharp-win32-ia32-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-win32-ia32
+
+--------------------------------------------------------------------------------
+Package Title: @img/sharp-win32-x64 (0.34.5)
+
+Package Locator: npm+@img/sharp-win32-x64$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Prebuilt sharp for use with Windows x64
+
+* Declared Licenses *
+LGPL-3.0-or-later, Apache-2.0
+
+* LGPL-3.0-or-later *
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Apache-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+- package.json
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+FTL
+--------------------------------------------------------------------------------
+File matches:
+- README.md
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+FTL
+- Copyright (c) 2013 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.34.5.tgz
+Dependency Path: next > sharp > @img/sharp-win32-x64
+
+--------------------------------------------------------------------------------
+Package Title: @next/env (15.5.20)
+
+Package Locator: npm+@next/env$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Next.js dotenv file loading
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/env/-/env-15.5.20.tgz
+Dependency Path: next > @next/env
+
+--------------------------------------------------------------------------------
+Package Title: @next/swc-darwin-arm64 (15.5.20)
+
+Package Locator: npm+@next/swc-darwin-arm64$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is the **aarch64-apple-darwin** binary for `@next/swc`
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-15.5.20.tgz
+Dependency Path: next > @next/swc-darwin-arm64
+
+--------------------------------------------------------------------------------
+Package Title: @next/swc-darwin-x64 (15.5.20)
+
+Package Locator: npm+@next/swc-darwin-x64$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is the **x86_64-apple-darwin** binary for `@next/swc`
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-15.5.20.tgz
+Dependency Path: next > @next/swc-darwin-x64
+
+--------------------------------------------------------------------------------
+Package Title: @next/swc-linux-arm64-gnu (15.5.20)
+
+Package Locator: npm+@next/swc-linux-arm64-gnu$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is the **linux-arm64-gnu** binary for `@next/swc`
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-15.5.20.tgz
+Dependency Path: next > @next/swc-linux-arm64-gnu
+
+--------------------------------------------------------------------------------
+Package Title: @next/swc-linux-arm64-musl (15.5.20)
+
+Package Locator: npm+@next/swc-linux-arm64-musl$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is the **linux-arm64-musl** binary for `@next/swc`
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-15.5.20.tgz
+Dependency Path: next > @next/swc-linux-arm64-musl
+
+--------------------------------------------------------------------------------
+Package Title: @next/swc-linux-x64-gnu (15.5.20)
+
+Package Locator: npm+@next/swc-linux-x64-gnu$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is the **x86_64-unknown-linux-gnu** binary for `@next/swc`
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-15.5.20.tgz
+Dependency Path: next > @next/swc-linux-x64-gnu
+
+--------------------------------------------------------------------------------
+Package Title: @next/swc-linux-x64-musl (15.5.20)
+
+Package Locator: npm+@next/swc-linux-x64-musl$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is the **linux-x64-musl** binary for `@next/swc`
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-15.5.20.tgz
+Dependency Path: next > @next/swc-linux-x64-musl
+
+--------------------------------------------------------------------------------
+Package Title: @next/swc-win32-arm64-msvc (15.5.20)
+
+Package Locator: npm+@next/swc-win32-arm64-msvc$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is the **win32-arm64-msvc** binary for `@next/swc`
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-15.5.20.tgz
+Dependency Path: next > @next/swc-win32-arm64-msvc
+
+--------------------------------------------------------------------------------
+Package Title: @next/swc-win32-x64-msvc (15.5.20)
+
+Package Locator: npm+@next/swc-win32-x64-msvc$15.5.20
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is the **x86_64-pc-windows-msvc** binary for `@next/swc`
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matt.j.straka@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/next.js#readme
+Package Download URL: https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-15.5.20.tgz
+Dependency Path: next > @next/swc-win32-x64-msvc
+
+--------------------------------------------------------------------------------
+Package Title: @swc/helpers (0.5.15)
+
+Package Locator: npm+@swc/helpers$0.5.15
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+External helpers for the swc project.
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2024 SWC contributors.
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2024 SWC contributors.
+
+* Package Info *
+
+Authors: kdy.1997.dev@gmail.com
+Package Manager: NPM
+Project URL: https://swc.rs/
+Package Download URL: https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz
+Dependency Path: next > @swc/helpers
+
+--------------------------------------------------------------------------------
+Package Title: attr-accept (2.2.5)
+
+Package Locator: npm+attr-accept$2.2.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+JavaScript implementation of the "accept" attribute for HTML5 <input type="file">
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2015 Andrey Okonetchnikov
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2015 Andrey Okonetchnikov
+
+* Package Info *
+
+Authors: rolandjitsu@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/react-dropzone/attr-accept#readme
+Package Download URL: https://registry.npmjs.org/attr-accept/-/attr-accept-2.2.5.tgz
+Dependency Path: react-dropzone > attr-accept
+
+--------------------------------------------------------------------------------
+Package Title: caniuse-lite (1.0.30001810)
+
+Package Locator: npm+caniuse-lite$1.0.30001810
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+A smaller version of caniuse-db, with only the essentials!
+
+* Declared Licenses *
+CC-BY-4.0
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c)  More considerations for licensors:
+  - Copyright (c)  and
+  - Copyright (c)  and Similar
+  - Copyright (c)  and Similar Rights
+  - Copyright (c)  and Similar Rights held by the
+  - Copyright (c)  and Similar Rights means copyright and/or similar rights
+  - Copyright (c)  and Similar Rights that apply to Your use of the
+  - Copyright (c)  and Similar Rights.
+  - Copyright (c)  and certain
+  - Copyright (c)  and certain other rights. Our licenses are
+  - Copyright (c)  and/or similar rights
+  - Copyright (c)  then that use is not regulated by the license. Our
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+CC-BY-4.0
+- Copyright (c)  and certain other rights. Our licenses are
+- Copyright (c)  More considerations for licensors:
+- Copyright (c)  then that use is not regulated by the license. Our
+- Copyright (c)  and certain
+- Copyright (c)  and Similar
+- Copyright (c)  and Similar Rights held by the
+- Copyright (c)  and Similar Rights means copyright and/or similar rights
+- Copyright (c)  and/or similar rights
+- Copyright (c)  and Similar Rights
+- Copyright (c)  and Similar Rights that apply to Your use of the
+- Copyright (c)  and Similar Rights.
+- Copyright (c)  and
+
+* Package Info *
+
+Authors: andrey@sitnik.es
+Package Manager: NPM
+Project URL: https://github.com/browserslist/caniuse-lite#readme
+Package Download URL: https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001810.tgz
+Dependency Path: next > caniuse-lite
+
+--------------------------------------------------------------------------------
+Package Title: client-only (0.0.1)
+
+Package Locator: npm+client-only$0.0.1
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+This is a marker package to indicate that a module can only be used in Client Components.
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- package.json
+--------------------------------------------------------------------------------
+
+* Package Info *
+
+Authors: sebastian@calyptus.eu
+Package Manager: NPM
+Project URL: https://www.npmjs.com/package/client-only
+Package Download URL: https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz
+Dependency Path: next > styled-jsx > client-only
+
+--------------------------------------------------------------------------------
+Package Title: cross-env (10.1.0)
+
+Package Locator: npm+cross-env$10.1.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+Run scripts that set and use environment variables across platforms
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2017-2025 Kent C. Dodds
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2017-2025 Kent C. Dodds
+
+* Package Info *
+
+Authors: me@kentcdodds.com
+Package Manager: NPM
+Project URL: https://github.com/kentcdodds/cross-env#readme
+Package Download URL: https://registry.npmjs.org/cross-env/-/cross-env-10.1.0.tgz
+Dependency Path: cross-env
+
+--------------------------------------------------------------------------------
+Package Title: cross-spawn (7.0.6)
+
+Package Locator: npm+cross-spawn$7.0.6
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Cross platform child_process#spawn and child_process#spawnSync
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2018 Made With MOXY Lda <hello@moxy.studio>
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2018 Made With MOXY Lda <hello@moxy.studio>
+
+* Package Info *
+
+Authors: andremiguelcruz@msn.com
+Package Manager: NPM
+Project URL: https://github.com/moxystudio/node-cross-spawn
+Package Download URL: https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz
+Dependency Path: cross-env > cross-spawn
+
+--------------------------------------------------------------------------------
+Package Title: detect-libc (2.1.2)
+
+Package Locator: npm+detect-libc$2.1.2
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Node.js module to detect the C standard library (libc) implementation family and version
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- index.d.ts
+  - Copyright (c) 2017 Lovell Fuller and others.
+- lib/detect-libc.js
+  - Copyright (c) 2017 Lovell Fuller and others.
+- lib/elf.js
+  - Copyright (c) 2017 Lovell Fuller and others.
+- lib/filesystem.js
+  - Copyright (c) 2017 Lovell Fuller and others.
+- lib/process.js
+  - Copyright (c) 2017 Lovell Fuller and others.
+- LICENSE
+- package.json
+- README.md
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2017 Lovell Fuller and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://github.com/lovell/detect-libc#readme
+Package Download URL: https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz
+Dependency Path: next > sharp > detect-libc
+
+--------------------------------------------------------------------------------
+Package Title: file-selector (2.1.2)
+
+Package Locator: npm+file-selector$2.1.2
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Convert DataTransfer object to a list of File objects
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2020 Roland Groza
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+0BSD
+--------------------------------------------------------------------------------
+File matches:
+- dist/bundles/file-selector.umd.js
+  - Copyright (c)  Microsoft Corporation.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2020 Roland Groza
+0BSD
+- Copyright (c)  Microsoft Corporation.
+
+* Package Info *
+
+Authors: rolandjitsu@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/react-dropzone/file-selector
+Package Download URL: https://registry.npmjs.org/file-selector/-/file-selector-2.1.2.tgz
+Dependency Path: react-dropzone > file-selector
+
+--------------------------------------------------------------------------------
+Package Title: isexe (2.0.0)
+
+Package Locator: npm+isexe$2.0.0
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Minimal module to check if a file is executable.
+
+* Declared Licenses *
+ISC
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c)  Isaac Z. Schlueter and Contributors
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+ISC
+- Copyright (c)  Isaac Z. Schlueter and Contributors
+
+* Package Info *
+
+Authors: i@izs.me
+Package Manager: NPM
+Project URL: https://github.com/isaacs/isexe#readme
+Package Download URL: https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz
+Dependency Path: cross-env > cross-spawn > which > isexe
+
+--------------------------------------------------------------------------------
+Package Title: js-tokens (4.0.0)
+
+Package Locator: npm+js-tokens$4.0.0
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Tiny JavaScript tokenizer.
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2014, 2015, 2016, 2017, 2018 Simon Lydell
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2014, 2015, 2016, 2017, 2018 Simon Lydell
+
+* Package Info *
+
+Authors: simon.lydell@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/lydell/js-tokens#readme
+Package Download URL: https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz
+Dependency Path: react-dropzone > prop-types > loose-envify > js-tokens
+
+--------------------------------------------------------------------------------
+Package Title: loose-envify (1.4.0)
+
+Package Locator: npm+loose-envify$1.4.0
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Fast (and loose) selective `process.env` replacer using js-tokens instead of an AST
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2015 Andres Suarez <zertosh@gmail.com>
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2015 Andres Suarez <zertosh@gmail.com>
+
+* Package Info *
+
+Authors: zertosh@gmail.com
+Package Manager: NPM
+Project URL: https://www.npmjs.com/package/loose-envify
+Package Download URL: https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz
+Dependency Path: react-dropzone > prop-types > loose-envify
+
+--------------------------------------------------------------------------------
+Package Title: nanoid (3.3.18)
+
+Package Locator: npm+nanoid$3.3.18
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+A tiny (117 bytes), secure URL-friendly unique string ID generator
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2017 Andrey Sitnik <andrey@sitnik.ru>
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2017 Andrey Sitnik <andrey@sitnik.ru>
+
+* Package Info *
+
+Authors: andrey@sitnik.es
+Package Manager: NPM
+Project URL: https://github.com/ai/nanoid#readme
+Package Download URL: https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz
+Dependency Path: next > postcss > nanoid
+
+--------------------------------------------------------------------------------
+Package Title: next (15.5.20)
+
+Package Locator: npm+next$15.5.20
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+The React Framework
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- dist/build/babel/plugins/react-loadable-plugin.d.ts
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/build/babel/plugins/react-loadable-plugin.js
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/build/jest/object-proxy.js
+  - Copyright (c) 2015 Keyan Zhang
+- dist/build/swc/jest-transformer.js
+  - Copyright (c) 2021 The swc Project Developers
+- dist/build/webpack/loaders/css-loader/src/camelcase.js
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+- dist/build/webpack/loaders/next-swc-loader.js
+  - Copyright (c) 2017 The swc Project Developers
+- dist/build/webpack/loaders/resolve-url-loader/index.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/build/webpack/loaders/resolve-url-loader/lib/file-protocol.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/build/webpack/loaders/resolve-url-loader/lib/join-function.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/build/webpack/loaders/resolve-url-loader/lib/postcss.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/build/webpack/loaders/resolve-url-loader/lib/value-processor.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/build/webpack/plugins/flight-manifest-plugin.d.ts
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/build/webpack/plugins/flight-manifest-plugin.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/build/webpack/plugins/memory-with-gc-cache-plugin.js
+  - Copyright (c)  JS Foundation and other contributors
+- dist/build/webpack/plugins/react-loadable-plugin.d.ts
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/build/webpack/plugins/react-loadable-plugin.js
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js
+  - Copyright (c)  JS Foundation and other contributors
+- dist/client/dev/hot-reloader/pages/hot-reloader-pages.d.ts
+  - Copyright (c) 2013 present, Facebook, Inc.
+- dist/client/dev/hot-reloader/pages/hot-reloader-pages.js
+  - Copyright (c) 2013 present, Facebook, Inc.
+- dist/compiled/@babel/runtime/LICENSE
+  - Copyright (c) 2014 present Sebastian McKenzie and other contributors
+- dist/compiled/@babel/runtime/package.json
+- dist/compiled/@edge-runtime/cookies/package.json
+- dist/compiled/@edge-runtime/ponyfill/package.json
+- dist/compiled/@edge-runtime/primitives/package.json
+- dist/compiled/@mswjs/interceptors/ClientRequest/package.json
+- dist/compiled/@napi-rs/triples/LICENSE
+  - Copyright (c) 2020 LongYinan
+- dist/compiled/@napi-rs/triples/package.json
+- dist/compiled/@next/font/package.json
+- dist/compiled/@next/react-refresh-utils/dist/internal/helpers.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/compiled/@vercel/nft/LICENSE
+  - Copyright (c) 2019 Vercel, Inc.
+- dist/compiled/@vercel/nft/package.json
+- dist/compiled/acorn/LICENSE
+  - Copyright (c) 2012-2022 by various contributors (see AUTHORS)
+- dist/compiled/acorn/package.json
+- dist/compiled/anser/LICENSE
+  - Copyright (c) 2012 19 Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)
+- dist/compiled/anser/package.json
+- dist/compiled/assert/LICENSE
+  - Copyright (c)  Joyent, Inc. and other Node contributors. All rights reserved.
+- dist/compiled/assert/package.json
+- dist/compiled/async-retry/package.json
+- dist/compiled/async-sema/package.json
+- dist/compiled/babel-code-frame/LICENSE
+  - Copyright (c) 2014 present Sebastian McKenzie and other contributors
+- dist/compiled/babel-code-frame/package.json
+- dist/compiled/babel/LICENSE
+  - Copyright (c) 2014 present Sebastian McKenzie and other contributors
+- dist/compiled/babel/package.json
+- dist/compiled/browserify-zlib/LICENSE
+  - Copyright (c)  Joyent, Inc. and other Node contributors. All rights reserved.
+  - Copyright (c)  Node.js contributors. All rights reserved.
+  - Copyright (c) 2014-2015 Devon Govett <devongovett@gmail.com>
+- dist/compiled/browserify-zlib/package.json
+- dist/compiled/browserslist/LICENSE
+  - Copyright (c) 2014 Andrey Sitnik <andrey@sitnik.ru> and other contributors
+- dist/compiled/browserslist/package.json
+- dist/compiled/buffer/LICENSE
+  - Copyright (c)  Feross Aboukhadijeh, and other contributors.
+- dist/compiled/buffer/package.json
+- dist/compiled/busboy/LICENSE
+  - Copyright (c)  Brian White. All rights reserved.
+- dist/compiled/bytes/LICENSE
+  - Copyright (c) 2012-2014 TJ Holowaychuk <tj@vision-media.ca>
+  - Copyright (c) 2015 Jed Watson <jed.watson@me.com>
+- dist/compiled/bytes/package.json
+- dist/compiled/ci-info/LICENSE
+  - Copyright (c) 2016-2018 Thomas Watson Steen
+- dist/compiled/ci-info/package.json
+- dist/compiled/cli-select/LICENSE
+  - Copyright (c) 2018 Cyril Wanner
+- dist/compiled/cli-select/package.json
+- dist/compiled/client-only/package.json
+- dist/compiled/commander/LICENSE
+  - Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
+- dist/compiled/commander/package.json
+- dist/compiled/comment-json/LICENSE
+  - Copyright (c) 2013 kaelzhang <>, contributors
+- dist/compiled/comment-json/package.json
+- dist/compiled/compression/LICENSE
+  - Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
+  - Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
+- dist/compiled/compression/package.json
+- dist/compiled/conf/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- dist/compiled/conf/package.json
+- dist/compiled/content-disposition/LICENSE
+  - Copyright (c) 2014-2017 Douglas Christopher Wilson
+- dist/compiled/content-disposition/package.json
+- dist/compiled/content-type/LICENSE
+  - Copyright (c) 2015 Douglas Christopher Wilson
+- dist/compiled/content-type/package.json
+- dist/compiled/cookie/LICENSE
+  - Copyright (c) 2012-2014 Roman Shtylman <shtylman@gmail.com>
+  - Copyright (c) 2015 Douglas Christopher Wilson <doug@somethingdoug.com>
+- dist/compiled/cookie/package.json
+- dist/compiled/cross-spawn/LICENSE
+  - Copyright (c) 2018 Made With MOXY Lda <hello@moxy.studio>
+- dist/compiled/cross-spawn/package.json
+- dist/compiled/crypto-browserify/LICENSE
+  - Copyright (c) 2013 Dominic Tarr
+- dist/compiled/crypto-browserify/package.json
+- dist/compiled/css.escape/package.json
+- dist/compiled/data-uri-to-buffer/package.json
+- dist/compiled/debug/LICENSE
+  - Copyright (c) 2014 TJ Holowaychuk <tj@vision-media.ca>
+- dist/compiled/debug/package.json
+- dist/compiled/devalue/LICENSE
+  - Copyright (c) 2018 19 [these people](https://github.com/rich-harris/devalue/graphs/contributors)
+- dist/compiled/devalue/package.json
+- dist/compiled/domain-browser/package.json
+- dist/compiled/edge-runtime/package.json
+- dist/compiled/events/LICENSE
+  - Copyright (c)  Joyent, Inc. and other Node contributors.
+- dist/compiled/events/package.json
+- dist/compiled/find-up/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- dist/compiled/find-up/package.json
+- dist/compiled/fresh/LICENSE
+  - Copyright (c) 2012 TJ Holowaychuk <tj@vision-media.ca>
+  - Copyright (c) 2016-2017 Douglas Christopher Wilson <doug@somethingdoug.com>
+- dist/compiled/fresh/package.json
+- dist/compiled/gzip-size/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- dist/compiled/gzip-size/package.json
+- dist/compiled/http-proxy-agent/package.json
+- dist/compiled/http-proxy/LICENSE
+  - Copyright (c) 2010-2016 Charlie Robbins, Jarrett Cruger & the Contributors.
+- dist/compiled/http-proxy/package.json
+- dist/compiled/https-browserify/LICENSE
+  - Copyright (c)  James Halliday
+- dist/compiled/https-browserify/package.json
+- dist/compiled/https-proxy-agent/package.json
+- dist/compiled/ignore-loader/LICENSE
+  - Copyright (c) 2016 Cherry Ng
+- dist/compiled/image-size/LICENSE
+  - Copyright (c) 2013 Present Aditya Yadav, http://netroy.in
+- dist/compiled/image-size/package.json
+- dist/compiled/is-animated/package.json
+- dist/compiled/is-docker/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- dist/compiled/is-docker/package.json
+- dist/compiled/is-wsl/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- dist/compiled/is-wsl/package.json
+- dist/compiled/jest-worker/LICENSE
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/compiled/jest-worker/package.json
+- dist/compiled/json5/package.json
+- dist/compiled/jsonwebtoken/LICENSE
+  - Copyright (c) 2015 Auth0, Inc. <support@auth0.com> (http://auth0.com)
+- dist/compiled/jsonwebtoken/package.json
+- dist/compiled/loader-runner/LICENSE
+  - Copyright (c)  Tobias Koppers @sokra
+- dist/compiled/loader-runner/package.json
+- dist/compiled/loader-utils2/LICENSE
+  - Copyright (c)  JS Foundation and other contributors
+- dist/compiled/loader-utils2/package.json
+- dist/compiled/loader-utils3/LICENSE
+  - Copyright (c)  JS Foundation and other contributors
+- dist/compiled/loader-utils3/package.json
+- dist/compiled/lodash.curry/LICENSE
+  - Copyright (c)  Jeremy Ashkenas,
+  - Copyright (c)  jQuery Foundation and other contributors <https://jquery.org/>
+- dist/compiled/lodash.curry/package.json
+- dist/compiled/mini-css-extract-plugin/LICENSE
+  - Copyright (c)  JS Foundation and other contributors
+- dist/compiled/mini-css-extract-plugin/package.json
+- dist/compiled/nanoid/LICENSE
+  - Copyright (c) 2017 Andrey Sitnik <andrey@sitnik.ru>
+- dist/compiled/nanoid/package.json
+- dist/compiled/neo-async/LICENSE
+  - Copyright (c)  Caolan McMahon
+  - Copyright (c) 2014-2018 Suguru Motegi
+- dist/compiled/neo-async/package.json
+- dist/compiled/node-html-parser/LICENSE
+  - Copyright (c) 2019 Tao Qiufeng
+- dist/compiled/node-html-parser/package.json
+- dist/compiled/ora/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+- dist/compiled/ora/package.json
+- dist/compiled/os-browserify/LICENSE
+  - Copyright (c) 2017 CoderPuppy
+- dist/compiled/os-browserify/package.json
+- dist/compiled/p-limit/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+- dist/compiled/p-limit/package.json
+- dist/compiled/p-queue/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+- dist/compiled/p-queue/package.json
+- dist/compiled/path-browserify/LICENSE
+  - Copyright (c) 2013 James Halliday
+- dist/compiled/path-browserify/package.json
+- dist/compiled/path-to-regexp/LICENSE
+  - Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
+- dist/compiled/path-to-regexp/package.json
+- dist/compiled/picomatch/LICENSE
+  - Copyright (c) 2017 present, Jon Schlinkert.
+- dist/compiled/picomatch/package.json
+- dist/compiled/postcss-flexbugs-fixes/LICENSE
+  - Copyright (c) 2015 Luis Rudge <luis@luisrudge.net>
+- dist/compiled/postcss-flexbugs-fixes/package.json
+- dist/compiled/postcss-modules-local-by-default/LICENSE
+  - Copyright (c) 2015 Mark Dalgleish <mark.john.dalgleish@gmail.com>
+- dist/compiled/postcss-modules-local-by-default/package.json
+- dist/compiled/postcss-safe-parser/LICENSE
+  - Copyright (c) 2013 Andrey Sitnik <andrey@sitnik.ru>
+- dist/compiled/postcss-safe-parser/package.json
+- dist/compiled/postcss-scss/LICENSE
+  - Copyright (c) 2013 Andrey Sitnik <andrey@sitnik.ru>
+- dist/compiled/postcss-scss/package.json
+- dist/compiled/postcss-value-parser/LICENSE
+  - Copyright (c)  Bogdan Chadkin <trysound@yandex.ru>
+- dist/compiled/postcss-value-parser/package.json
+- dist/compiled/process/LICENSE
+  - Copyright (c) 2013 Roman Shtylman <shtylman@gmail.com>
+- dist/compiled/process/package.json
+- dist/compiled/punycode/package.json
+- dist/compiled/raw-body/LICENSE
+  - Copyright (c) 2013-2014 Jonathan Ong <me@jongleberry.com>
+  - Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
+- dist/compiled/raw-body/package.json
+- dist/compiled/react-dom-experimental/cjs/react-dom-client.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-client.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-profiling.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-profiling.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-server-legacy.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom-experimental/cjs/react-dom-server-legacy.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom-experimental/cjs/react-dom-server-legacy.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom-experimental/cjs/react-dom-server-legacy.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom-experimental/cjs/react-dom-server.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom-experimental/cjs/react-dom-server.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom-experimental/cjs/react-dom-server.bun.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-server.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom-experimental/cjs/react-dom-server.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom-experimental/cjs/react-dom-server.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-server.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-test-utils.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-unstable_testing.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom-unstable_testing.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/cjs/react-dom.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom-experimental/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom-client.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom-client.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom-profiling.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom-profiling.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom-server-legacy.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom/cjs/react-dom-server-legacy.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom/cjs/react-dom-server-legacy.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom/cjs/react-dom-server-legacy.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom/cjs/react-dom-server.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom/cjs/react-dom-server.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom/cjs/react-dom-server.bun.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom-server.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom/cjs/react-dom-server.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- dist/compiled/react-dom/cjs/react-dom-server.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom-server.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom-test-utils.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/cjs/react-dom.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-dom/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-compiler-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-compiler-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-compiler-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-dev-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-dev-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-dev-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-dev-runtime.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-dev-runtime.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-runtime.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react-jsx-runtime.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/cjs/react.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/compiler-runtime.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-experimental/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-is/cjs/react-is.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-is/cjs/react-is.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-is/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-is/package.json
+- dist/compiled/react-refresh/cjs/react-refresh-babel.development.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/compiled/react-refresh/cjs/react-refresh-babel.production.min.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/compiled/react-refresh/cjs/react-refresh-runtime.development.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/compiled/react-refresh/cjs/react-refresh-runtime.production.min.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/compiled/react-refresh/LICENSE
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/compiled/react-refresh/package.json
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-client.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-client.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-client.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-client.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-client.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-client.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-server.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-server.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-server.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-server.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-server.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/cjs/react-server-dom-turbopack-server.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/index.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack-experimental/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-client.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-client.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-client.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-client.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-client.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-client.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-server.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-server.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-server.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-server.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-server.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/cjs/react-server-dom-turbopack-server.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/index.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-turbopack/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-client.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-client.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-client.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-client.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-client.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-client.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-client.node.unbundled.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-client.node.unbundled.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-node-register.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-plugin.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-server.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-server.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-server.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-server.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-server.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-server.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-server.node.unbundled.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/cjs/react-server-dom-webpack-server.node.unbundled.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/index.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack-experimental/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.node.unbundled.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.node.unbundled.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-node-register.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-plugin.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-server.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-server.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-server.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-server.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-server.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-server.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-server.node.unbundled.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-server.node.unbundled.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/index.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react-server-dom-webpack/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-compiler-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-compiler-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-compiler-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-dev-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-dev-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-dev-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-dev-runtime.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-dev-runtime.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-runtime.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react-jsx-runtime.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/cjs/react.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/compiler-runtime.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/react/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/regenerator-runtime/LICENSE
+  - Copyright (c) 2014 present, Facebook, Inc.
+- dist/compiled/regenerator-runtime/package.json
+- dist/compiled/regenerator-runtime/path.js
+  - Copyright (c) 2014 present, Facebook, Inc.
+- dist/compiled/regenerator-runtime/runtime.js
+  - Copyright (c) 2014 present, Facebook, Inc.
+- dist/compiled/safe-stable-stringify/LICENSE
+  - Copyright (c)  Ruben Bridgewater
+- dist/compiled/safe-stable-stringify/package.json
+- dist/compiled/sass-loader/LICENSE
+  - Copyright (c)  JS Foundation and other contributors
+- dist/compiled/sass-loader/package.json
+- dist/compiled/scheduler-experimental/cjs/scheduler-unstable_mock.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler-experimental/cjs/scheduler-unstable_mock.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler-experimental/cjs/scheduler-unstable_post_task.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler-experimental/cjs/scheduler-unstable_post_task.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler-experimental/cjs/scheduler.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler-experimental/cjs/scheduler.native.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler-experimental/cjs/scheduler.native.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler-experimental/cjs/scheduler.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler-experimental/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/cjs/scheduler-unstable_mock.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/cjs/scheduler-unstable_mock.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/cjs/scheduler-unstable_post_task.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/cjs/scheduler-unstable_post_task.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/cjs/scheduler.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/cjs/scheduler.native.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/cjs/scheduler.native.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/cjs/scheduler.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/scheduler/LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- dist/compiled/schema-utils2/LICENSE
+  - Copyright (c)  JS Foundation and other contributors
+- dist/compiled/schema-utils2/package.json
+- dist/compiled/schema-utils3/LICENSE
+  - Copyright (c)  JS Foundation and other contributors
+- dist/compiled/schema-utils3/package.json
+- dist/compiled/send/LICENSE
+  - Copyright (c) 2012 TJ Holowaychuk
+  - Copyright (c) 2014-2022 Douglas Christopher Wilson
+- dist/compiled/send/package.json
+- dist/compiled/server-only/package.json
+- dist/compiled/setimmediate/package.json
+- dist/compiled/shell-quote/LICENSE
+  - Copyright (c) 2013 James Halliday (mail@substack.net)
+- dist/compiled/shell-quote/package.json
+- dist/compiled/stacktrace-parser/LICENSE
+  - Copyright (c) 2014-2019 Georg Tavonius
+- dist/compiled/stacktrace-parser/package.json
+- dist/compiled/stream-browserify/LICENSE
+  - Copyright (c)  James Halliday
+- dist/compiled/stream-browserify/package.json
+- dist/compiled/stream-http/LICENSE
+  - Copyright (c) 2015 John Hiesey
+- dist/compiled/stream-http/package.json
+- dist/compiled/string_decoder/LICENSE
+  - Copyright (c)  Joyent, Inc. and other Node contributors. All rights reserved.
+  - Copyright (c)  Node.js contributors. All rights reserved.
+- dist/compiled/string_decoder/package.json
+- dist/compiled/strip-ansi/LICENSE
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- dist/compiled/strip-ansi/package.json
+- dist/compiled/superstruct/package.json
+- dist/compiled/text-table/LICENSE
+- dist/compiled/text-table/package.json
+- dist/compiled/timers-browserify/package.json
+- dist/compiled/tty-browserify/LICENSE
+- dist/compiled/tty-browserify/package.json
+- dist/compiled/ua-parser-js/package.json
+- dist/compiled/unistore/package.json
+- dist/compiled/util/LICENSE
+  - Copyright (c)  Joyent, Inc. and other Node contributors. All rights reserved.
+- dist/compiled/util/package.json
+- dist/compiled/vm-browserify/LICENSE
+- dist/compiled/vm-browserify/package.json
+- dist/compiled/watchpack/LICENSE
+  - Copyright (c)  JS Foundation and other contributors
+- dist/compiled/watchpack/package.json
+- dist/compiled/webpack-sources1/LICENSE
+  - Copyright (c) 2017 JS Foundation and other contributors
+- dist/compiled/webpack-sources1/package.json
+- dist/compiled/webpack-sources3/LICENSE
+  - Copyright (c) 2017 JS Foundation and other contributors
+- dist/compiled/webpack-sources3/package.json
+- dist/compiled/webpack/LICENSE
+  - Copyright (c)  JS Foundation and other contributors
+- dist/compiled/webpack/package.json
+- dist/compiled/ws/LICENSE
+  - Copyright (c) 2011 Einar Otto Stangvik <einaros@gmail.com>
+- dist/compiled/ws/package.json
+- dist/compiled/zod-validation-error/LICENSE
+  - Copyright (c) 2022 Causaly, Inc <front-end@causaly.com>
+- dist/compiled/zod-validation-error/package.json
+- dist/compiled/zod/LICENSE
+  - Copyright (c) 2025 Colin McDonnell
+- dist/compiled/zod/package.json
+- dist/esm/build/babel/plugins/react-loadable-plugin.js
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/esm/build/swc/jest-transformer.js
+  - Copyright (c) 2021 The swc Project Developers
+- dist/esm/build/webpack/loaders/css-loader/src/camelcase.js
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+- dist/esm/build/webpack/loaders/next-swc-loader.js
+  - Copyright (c) 2017 The swc Project Developers
+- dist/esm/build/webpack/loaders/resolve-url-loader/index.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/esm/build/webpack/loaders/resolve-url-loader/lib/file-protocol.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/esm/build/webpack/loaders/resolve-url-loader/lib/join-function.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/esm/build/webpack/loaders/resolve-url-loader/lib/postcss.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/esm/build/webpack/loaders/resolve-url-loader/lib/value-processor.js
+  - Copyright (c) 2016 Ben Holloway
+- dist/esm/build/webpack/plugins/flight-manifest-plugin.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- dist/esm/build/webpack/plugins/memory-with-gc-cache-plugin.js
+  - Copyright (c)  JS Foundation and other contributors
+- dist/esm/build/webpack/plugins/react-loadable-plugin.js
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/esm/build/webpack/plugins/wellknown-errors-plugin/parseNotFoundError.js
+  - Copyright (c)  JS Foundation and other contributors
+- dist/esm/client/dev/hot-reloader/pages/hot-reloader-pages.js
+  - Copyright (c) 2013 present, Facebook, Inc.
+- dist/esm/lib/fs/rename.js
+  - Copyright (c) 2015 present Microsoft Corporation
+- dist/esm/lib/pretty-bytes.js
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- dist/esm/next-devtools/server/launch-editor.js
+  - Copyright (c) 2015 present, Facebook, Inc.
+- dist/esm/server/lib/is-ipv6.js
+  - Copyright (c)  Joyent, Inc. and other Node contributors.
+- dist/esm/shared/lib/dset.js
+  - Copyright (c)  Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
+- dist/esm/shared/lib/format-webpack-messages.js
+  - Copyright (c) 2015 present, Facebook, Inc.
+- dist/esm/shared/lib/loadable.shared-runtime.js
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/esm/shared/lib/mitt.js
+  - Copyright (c)  Jason Miller (https://jasonformat.com/)
+- dist/esm/shared/lib/router/utils/format-url.js
+  - Copyright (c)  Joyent, Inc. and other Node contributors.
+- dist/lib/fs/rename.js
+  - Copyright (c) 2015 present Microsoft Corporation
+- dist/lib/pretty-bytes.js
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- dist/next-devtools/server/launch-editor.js
+  - Copyright (c) 2015 present, Facebook, Inc.
+- dist/server/dev/hot-middleware.js
+  - Copyright (c)  JS Foundation and other contributors
+- dist/server/lib/is-ipv6.js
+  - Copyright (c)  Joyent, Inc. and other Node contributors.
+- dist/shared/lib/dset.js
+  - Copyright (c)  Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
+- dist/shared/lib/format-webpack-messages.js
+  - Copyright (c) 2015 present, Facebook, Inc.
+- dist/shared/lib/loadable.shared-runtime.d.ts
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/shared/lib/loadable.shared-runtime.js
+  - Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- dist/shared/lib/mitt.js
+  - Copyright (c)  Jason Miller (https://jasonformat.com/)
+- dist/shared/lib/router/utils/format-url.js
+  - Copyright (c)  Joyent, Inc. and other Node contributors.
+- license.md
+  - Copyright (c) 2025 Vercel, Inc.
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+BSD-3-Clause, BSD-2-Clause, Apache-2.0, ISC, CC-BY-SA-4.0, CC0-1.0, MPL-2.0
+
+* BSD-3-Clause *
+--------------------------------------------------------------------------------
+File matches:
+- dist/compiled/@hapi/accept/package.json
+- dist/compiled/source-map/LICENSE
+  - Copyright (c) 2009-2011 Mozilla Foundation and contributors
+- dist/compiled/source-map/package.json
+- dist/compiled/source-map08/LICENSE
+  - Copyright (c) 2009-2011 Mozilla Foundation and contributors
+- dist/compiled/source-map08/package.json
+- dist/compiled/source-map08/source-map.js
+  - Copyright (c) 2009-2011 Mozilla Foundation and contributors
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+  - Copyright (c) 2011 The Closure Compiler Authors. All rights reserved.
+  - Copyright (c) 2014 Mozilla Foundation and contributors
+--------------------------------------------------------------------------------
+
+* BSD-2-Clause *
+--------------------------------------------------------------------------------
+File matches:
+- dist/compiled/terser/LICENSE
+  - Copyright (c) 2012-2018 c) Mihai Bazon <mihai.bazon@gmail.com>
+- dist/compiled/terser/package.json
+--------------------------------------------------------------------------------
+
+* Apache-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- dist/compiled/@ampproject/toolbox-optimizer/LICENSE
+  - Copyright (c) 2015 Google Inc.
+- dist/compiled/@ampproject/toolbox-optimizer/package.json
+- dist/compiled/@opentelemetry/api/LICENSE
+- dist/compiled/@opentelemetry/api/package.json
+- dist/compiled/amphtml-validator/package.json
+- dist/compiled/native-url/LICENSE
+- dist/compiled/native-url/package.json
+- dist/compiled/web-vitals-attribution/LICENSE
+  - Copyright (c) 2020 Google LLC
+- dist/compiled/web-vitals-attribution/package.json
+- dist/compiled/web-vitals/LICENSE
+  - Copyright (c) 2020 Google LLC
+- dist/compiled/web-vitals/package.json
+--------------------------------------------------------------------------------
+
+* ISC *
+--------------------------------------------------------------------------------
+File matches:
+- dist/compiled/glob/LICENSE
+  - Copyright (c)  Isaac Z. Schlueter and Contributors
+- dist/compiled/glob/package.json
+- dist/compiled/icss-utils/package.json
+- dist/compiled/lru-cache/LICENSE
+  - Copyright (c)  Isaac Z. Schlueter and Contributors
+- dist/compiled/lru-cache/package.json
+- dist/compiled/postcss-modules-extract-imports/LICENSE
+  - Copyright (c) 2015 Glen Maddern
+- dist/compiled/postcss-modules-extract-imports/package.json
+- dist/compiled/postcss-modules-scope/LICENSE
+  - Copyright (c) 2015 Glen Maddern
+- dist/compiled/postcss-modules-scope/package.json
+- dist/compiled/postcss-modules-values/LICENSE
+  - Copyright (c) 2015 Glen Maddern
+- dist/compiled/postcss-modules-values/package.json
+- dist/compiled/semver/LICENSE
+  - Copyright (c)  Isaac Z. Schlueter and Contributors
+- dist/compiled/semver/package.json
+- dist/compiled/tar/LICENSE
+  - Copyright (c)  Isaac Z. Schlueter and Contributors
+- dist/compiled/tar/package.json
+- dist/esm/lib/picocolors.js
+  - Copyright (c) 2021 Alexey Raspopov, Kostiantyn Denysov, Anton Verinov
+- dist/lib/picocolors.js
+  - Copyright (c) 2021 Alexey Raspopov, Kostiantyn Denysov, Anton Verinov
+--------------------------------------------------------------------------------
+
+* CC-BY-SA-4.0 *
+--------------------------------------------------------------------------------
+File matches:
+- dist/compiled/glob/LICENSE
+  - Copyright (c)  Isaac Z. Schlueter and Contributors
+--------------------------------------------------------------------------------
+
+* CC0-1.0 *
+--------------------------------------------------------------------------------
+File matches:
+- dist/compiled/lodash.curry/LICENSE
+  - Copyright (c)  Jeremy Ashkenas,
+  - Copyright (c)  jQuery Foundation and other contributors <https://jquery.org/>
+- dist/compiled/postcss-preset-env/package.json
+- dist/compiled/string-hash/package.json
+--------------------------------------------------------------------------------
+
+* MPL-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- dist/compiled/@vercel/og/LICENSE
+- dist/compiled/@vercel/og/package.json
+- dist/compiled/@vercel/og/satori/LICENSE
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2017 present James Kyle <me@thejameskyle.com>
+- Copyright (c)  Joyent, Inc. and other Node contributors. All rights reserved.
+- Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
+- Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
+- Copyright (c) 2013 Dominic Tarr
+- Copyright (c) 2010-2016 Charlie Robbins, Jarrett Cruger & the Contributors.
+- Copyright (c)  Facebook, Inc. and its affiliates.
+- Copyright (c) 2017 CoderPuppy
+- Copyright (c)  Meta Platforms, Inc. and affiliates.
+- Copyright (c) 2011 Gary Court
+- Copyright (c) 2021 The swc Project Developers
+- Copyright (c)  JS Foundation and other contributors
+- Copyright (c) 2014-2015 Devon Govett <devongovett@gmail.com>
+- Copyright (c)  Node.js contributors. All rights reserved.
+- Copyright (c)  Feross Aboukhadijeh, and other contributors.
+- Copyright (c) 2011 Einar Otto Stangvik <einaros@gmail.com>
+- Copyright (c) 2014 present Sebastian McKenzie and other contributors
+- Copyright (c) 2014 Andrey Sitnik <andrey@sitnik.ru> and other contributors
+- Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+- Copyright (c) 2016 Ben Holloway
+- Copyright (c) 2015 Luis Rudge <luis@luisrudge.net>
+- Copyright (c) 2013 kaelzhang <>, contributors
+- Copyright (c)  Joyent, Inc. and other Node contributors.
+- Copyright (c) 2014-2018 Suguru Motegi
+- Copyright (c)  Caolan McMahon
+- Copyright (c) 2013 Roman Shtylman <shtylman@gmail.com>
+- Copyright (c)  jQuery Foundation and other contributors <https://jquery.org/>
+- Copyright (c)  Jeremy Ashkenas,
+- Copyright (c) 2015 Keyan Zhang
+- Copyright (c) 2019 Vercel, Inc.
+- Copyright (c) 2012 19 Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)
+- Copyright (c) 2014-2017 Douglas Christopher Wilson
+- Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
+- Copyright (c) 2017 The swc Project Developers
+- Copyright (c) 2013 present, Facebook, Inc.
+- Copyright (c) 2012-2014 TJ Holowaychuk <tj@vision-media.ca>
+- Copyright (c) 2015 Jed Watson <jed.watson@me.com>
+- Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- Copyright (c) 2013 James Halliday
+- Copyright (c) 2013 Andrey Sitnik <andrey@sitnik.ru>
+- Copyright (c) 2025 Colin McDonnell
+- Copyright (c) 2016 Cherry Ng
+- Copyright (c)  Tobias Koppers @sokra
+- Copyright (c) 2020 LongYinan
+- Copyright (c) 2012-2022 by various contributors (see AUTHORS)
+- Copyright (c)  Brian White. All rights reserved.
+- Copyright (c) 2015 Douglas Christopher Wilson
+- Copyright (c) 2018 19 [these people](https://github.com/rich-harris/devalue/graphs/contributors)
+- Copyright (c) 2012 TJ Holowaychuk <tj@vision-media.ca>
+- Copyright (c) 2016-2017 Douglas Christopher Wilson <doug@somethingdoug.com>
+- Copyright (c) 2018 Cyril Wanner
+- Copyright (c) 2012-2014 Roman Shtylman <shtylman@gmail.com>
+- Copyright (c) 2015 Douglas Christopher Wilson <doug@somethingdoug.com>
+- Copyright (c) 2016-2018 Thomas Watson Steen
+- Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
+- Copyright (c) 2018 Made With MOXY Lda <hello@moxy.studio>
+- Copyright (c) 2014 TJ Holowaychuk <tj@vision-media.ca>
+- Copyright (c) 2012 TJ Holowaychuk
+- Copyright (c) 2014-2022 Douglas Christopher Wilson
+- Copyright (c) 2019 Tao Qiufeng
+- Copyright (c) 2017 present, Jon Schlinkert.
+- Copyright (c)  James Halliday
+- Copyright (c) 2015 present Microsoft Corporation
+- Copyright (c) 2013 Present Aditya Yadav, http://netroy.in
+- Copyright (c) 2015 Auth0, Inc. <support@auth0.com> (http://auth0.com)
+- Copyright (c) 2017 Andrey Sitnik <andrey@sitnik.ru>
+- Copyright (c)  Bogdan Chadkin <trysound@yandex.ru>
+- Copyright (c) 2013-2014 Jonathan Ong <me@jongleberry.com>
+- Copyright (c) 2015 Mark Dalgleish <mark.john.dalgleish@gmail.com>
+- Copyright (c)  Jason Miller (https://jasonformat.com/)
+- Copyright (c) 2014 present, Facebook, Inc.
+- Copyright (c) 2014-2019 Georg Tavonius
+- Copyright (c) 2015 John Hiesey
+- Copyright (c) 2017 JS Foundation and other contributors
+- Copyright (c)  Ruben Bridgewater
+- Copyright (c) 2013 James Halliday (mail@substack.net)
+- Copyright (c) 2022 Causaly, Inc <front-end@causaly.com>
+- Copyright (c)  Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
+- Copyright (c) 2015 present, Facebook, Inc.
+- Copyright (c) 2025 Vercel, Inc.
+BSD-3-Clause
+- Copyright (c) 2009-2011 Mozilla Foundation and contributors
+- Copyright (c) 2011 Mozilla Foundation and contributors
+- Copyright (c) 2011 The Closure Compiler Authors. All rights reserved.
+- Copyright (c) 2014 Mozilla Foundation and contributors
+BSD-2-Clause
+- Copyright (c) 2012-2018 c) Mihai Bazon <mihai.bazon@gmail.com>
+Apache-2.0
+- Copyright (c) 2015 Google Inc.
+- Copyright (c) 2020 Google LLC
+ISC
+- Copyright (c)  Isaac Z. Schlueter and Contributors
+- Copyright (c) 2015 Glen Maddern
+- Copyright (c) 2021 Alexey Raspopov, Kostiantyn Denysov, Anton Verinov
+CC-BY-SA-4.0
+- Copyright (c)  Isaac Z. Schlueter and Contributors
+CC0-1.0
+- Copyright (c)  jQuery Foundation and other contributors <https://jquery.org/>
+- Copyright (c)  Jeremy Ashkenas,
+
+* Package Info *
+
+Authors: infra+release@vercel.com, matheus.frndes@gmail.com, matt.j.straka@gmail.com, team@zeit.co
+Package Manager: NPM
+Project URL: https://nextjs.org/
+Package Download URL: https://registry.npmjs.org/next/-/next-15.5.20.tgz
+Dependency Path: next
+
+--------------------------------------------------------------------------------
+Package Title: object-assign (4.1.1)
+
+Package Locator: npm+object-assign$4.1.1
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+ES2015 `Object.assign()` ponyfill
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- license
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+
+* Package Info *
+
+Authors: ben@benalpert.com, dan.abramov@gmail.com, sindresorhus@gmail.com
+Package Manager: NPM
+Project URL: https://www.npmjs.com/package/object-assign
+Package Download URL: https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz
+Dependency Path: react-dropzone > prop-types > object-assign
+
+--------------------------------------------------------------------------------
+Package Title: packaging (26.0)
+
+Package Locator: pip+packaging$26.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+Core utilities for Python packages
+
+* Declared Licenses *
+BSD-3-Clause, BSD-2-Clause, Apache-2.0
+
+* BSD-3-Clause *
+--------------------------------------------------------------------------------
+File matches:
+- docs/conf.py
+- docs/development/submitting-patches.rst
+- LICENSE
+- src/packaging/__init__.py
+- src/packaging/_structures.py
+- src/packaging/markers.py
+- src/packaging/requirements.py
+- src/packaging/specifiers.py
+- src/packaging/tags.py
+- src/packaging/utils.py
+- src/packaging/version.py
+- tests/__init__.py
+- tests/test_markers.py
+- tests/test_requirements.py
+- tests/test_specifiers.py
+- tests/test_structures.py
+- tests/test_tags.py
+- tests/test_utils.py
+- tests/test_version.py
+--------------------------------------------------------------------------------
+
+* BSD-2-Clause *
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE.BSD
+  - Copyright (c)  Donald Stufft and individual contributors.
+--------------------------------------------------------------------------------
+
+* Apache-2.0 *
+--------------------------------------------------------------------------------
+File matches:
+- docs/conf.py
+- docs/development/submitting-patches.rst
+- LICENSE
+- LICENSE.APACHE
+- src/packaging/__init__.py
+- src/packaging/_structures.py
+- src/packaging/markers.py
+- src/packaging/requirements.py
+- src/packaging/specifiers.py
+- src/packaging/tags.py
+- src/packaging/utils.py
+- src/packaging/version.py
+- tests/__init__.py
+- tests/test_markers.py
+- tests/test_requirements.py
+- tests/test_specifiers.py
+- tests/test_structures.py
+- tests/test_tags.py
+- tests/test_utils.py
+- tests/test_version.py
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- src/packaging/licenses/__init__.py
+  - Copyright (c) 2017 present Ofek Lev <oss@ofek.dev>
+--------------------------------------------------------------------------------
+
+* Copyrights *
+BSD-2-Clause
+- Copyright (c)  Donald Stufft and individual contributors.
+MIT
+- Copyright (c) 2017 present Ofek Lev <oss@ofek.dev>
+
+* Package Info *
+
+Authors: Donald Stufft <donald@stufft.io>
+Package Manager: Pip
+Project URL: https://pypi.org/project/packaging/
+Package Download URL: https://files.pythonhosted.org/packages/65/ee/299d360cdc32edc7d2cf530f3accf79c4fca01e96ffc950d8a52213bd8e4/packaging-26.0.tar.gz
+Dependency Path: packaging
+
+--------------------------------------------------------------------------------
+Package Title: path-key (3.1.1)
+
+Package Locator: npm+path-key$3.1.1
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Get the PATH environment variable key cross-platform
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- license
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+
+* Package Info *
+
+Authors: sindresorhus@gmail.com
+Package Manager: NPM
+Project URL: https://www.npmjs.com/package/path-key
+Package Download URL: https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz
+Dependency Path: cross-env > cross-spawn > path-key
+
+--------------------------------------------------------------------------------
+Package Title: picocolors (1.1.1)
+
+Package Locator: npm+picocolors$1.1.1
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+The tiniest and the fastest library for terminal output formatting with ANSI colors
+
+* Declared Licenses *
+ISC
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+ISC
+- Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov
+
+* Package Info *
+
+Authors: oleksii.raspopov@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/alexeyraspopov/picocolors#readme
+Package Download URL: https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz
+Dependency Path: next > postcss > picocolors
+
+--------------------------------------------------------------------------------
+Package Title: postcss (8.4.31)
+
+Package Locator: npm+postcss$8.4.31
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Tool for transforming styles with JS plugins
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2013 Andrey Sitnik <andrey@sitnik.ru>
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2013 Andrey Sitnik <andrey@sitnik.ru>
+
+* Package Info *
+
+Authors: andrey@sitnik.es
+Package Manager: NPM
+Project URL: https://postcss.org/
+Package Download URL: https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz
+Dependency Path: next > postcss
+
+--------------------------------------------------------------------------------
+Package Title: prop-types (15.8.1)
+
+Package Locator: npm+prop-types$15.8.1
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Runtime type checking for React props and similar objects.
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- checkPropTypes.js
+  - Copyright (c) 2013 present, Facebook, Inc.
+- factory.js
+  - Copyright (c) 2013 present, Facebook, Inc.
+- factoryWithThrowingShims.js
+  - Copyright (c) 2013 present, Facebook, Inc.
+- factoryWithTypeCheckers.js
+  - Copyright (c) 2013 present, Facebook, Inc.
+- index.js
+  - Copyright (c) 2013 present, Facebook, Inc.
+- lib/ReactPropTypesSecret.js
+  - Copyright (c) 2013 present, Facebook, Inc.
+- LICENSE
+  - Copyright (c) 2013 present, Facebook, Inc.
+- package.json
+- prop-types.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+  - Copyright (c) 2013 present, Facebook, Inc.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2013 present, Facebook, Inc.
+- Copyright (c)  Facebook, Inc. and its affiliates.
+
+* Package Info *
+
+Authors: briandavidvaughn@gmail.com, dan.abramov@gmail.com, ljharb@gmail.com, npm@andrewclark.io, npm@sophiebits.com, opensource+npm@fb.com
+Package Manager: NPM
+Project URL: https://facebook.github.io/react/
+Package Download URL: https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz
+Dependency Path: react-dropzone > prop-types
+
+--------------------------------------------------------------------------------
+Package Title: python-dotenv (1.2.2)
+
+Package Locator: pip+python-dotenv$1.2.2
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+Read key-value pairs from a .env file and set them as environment variables
+
+* Declared Licenses *
+BSD-3-Clause
+--------------------------------------------------------------------------------
+File matches:
+- docs/license.md
+  - Copyright (c) 2014 Saurabh Kumar (python-dotenv), 2013, Ted Tieken (django-dotenv-rw), 2013, Jacob Kaplan-Moss (django-dotenv)
+- LICENSE
+  - Copyright (c) 2014 Saurabh Kumar (python-dotenv), 2013, Ted Tieken (django-dotenv-rw), 2013, Jacob Kaplan-Moss (django-dotenv)
+--------------------------------------------------------------------------------
+
+* Copyrights *
+BSD-3-Clause
+- Copyright (c) 2014 Saurabh Kumar (python-dotenv), 2013, Ted Tieken (django-dotenv-rw), 2013, Jacob Kaplan-Moss (django-dotenv)
+
+* Package Info *
+
+Authors: Saurabh Kumar <me+github@saurabh-kumar.com>
+Package Manager: Pip
+Project URL: https://pypi.org/project/python-dotenv/
+Package Download URL: https://files.pythonhosted.org/packages/82/ed/0301aeeac3e5353ef3d94b6ec08bbcabd04a72018415dcb29e588514bba8/python_dotenv-1.2.2.tar.gz
+Dependency Path: python-dotenv
+
+--------------------------------------------------------------------------------
+Package Title: react (19.2.5)
+
+Package Locator: npm+react$19.2.5
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+React is a JavaScript library for building user interfaces.
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- cjs/react-compiler-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-compiler-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-compiler-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-dev-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-dev-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-dev-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-dev-runtime.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-dev-runtime.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-runtime.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-runtime.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-runtime.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-runtime.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-jsx-runtime.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- compiler-runtime.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c)  Meta Platforms, Inc. and affiliates.
+
+* Package Info *
+
+Authors: opensource+npm@fb.com, react-core@meta.com
+Package Manager: NPM
+Project URL: https://react.dev/
+Package Download URL: https://registry.npmjs.org/react/-/react-19.2.5.tgz
+Dependency Path: next > react > next > react-dom > react > next > styled-jsx > react > react > react-dom > react > react-dropzone > react
+
+--------------------------------------------------------------------------------
+Package Title: react-dom (19.2.5)
+
+Package Locator: npm+react-dom$19.2.5
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+React package for working with the DOM.
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- cjs/react-dom-client.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-client.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-profiling.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-profiling.profiling.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-server-legacy.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- cjs/react-dom-server-legacy.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- cjs/react-dom-server-legacy.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- cjs/react-dom-server-legacy.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- cjs/react-dom-server.browser.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- cjs/react-dom-server.browser.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- cjs/react-dom-server.bun.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-server.bun.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-server.edge.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- cjs/react-dom-server.edge.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+  - Copyright (c) 2011 Gary Court
+- cjs/react-dom-server.node.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-server.node.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-test-utils.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom-test-utils.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom.react-server.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/react-dom.react-server.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c)  Meta Platforms, Inc. and affiliates.
+- Copyright (c) 2011 Gary Court
+
+* Package Info *
+
+Authors: opensource+npm@fb.com, react-core@meta.com
+Package Manager: NPM
+Project URL: https://react.dev/
+Package Download URL: https://registry.npmjs.org/react-dom/-/react-dom-19.2.5.tgz
+Dependency Path: next > react-dom > react-dom
+
+--------------------------------------------------------------------------------
+Package Title: react-dropzone (14.3.8)
+
+Package Locator: npm+react-dropzone$14.3.8
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+Simple HTML5 drag-drop zone with React.js
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c) 2018 Param Aggarwal
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2018 Param Aggarwal
+
+* Package Info *
+
+Authors: andrey@okonet.dev, rmarkins@gmail.com, rolandjitsu@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/react-dropzone/react-dropzone
+Package Download URL: https://registry.npmjs.org/react-dropzone/-/react-dropzone-14.3.8.tgz
+Dependency Path: react-dropzone
+
+--------------------------------------------------------------------------------
+Package Title: react-is (16.13.1)
+
+Package Locator: npm+react-is$16.13.1
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Brand checking of React Elements.
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- cjs/react-is.development.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- cjs/react-is.production.min.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- LICENSE
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- package.json
+- umd/react-is.development.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+- umd/react-is.production.min.js
+  - Copyright (c)  Facebook, Inc. and its affiliates.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c)  Facebook, Inc. and its affiliates.
+
+* Package Info *
+
+Authors: opensource+npm@fb.com, react-core@meta.com
+Package Manager: NPM
+Project URL: https://react.dev/
+Package Download URL: https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz
+Dependency Path: react-dropzone > prop-types > react-is
+
+--------------------------------------------------------------------------------
+Package Title: requests (2.33.1)
+
+Package Locator: pip+requests$2.33.1
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+# Requests
+
+**Requests** is a simple, yet elegant, HTTP library.
+
+```python
+>>> import requests
+>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
+>>> r.status_code
+200
+>>> r.headers['content-type']
+'application/json; charset=utf8'
+>>> r.encoding
+'utf-8'
+>>> r.text
+'{"authenticated": true, ...'
+>>> r.json()
+{'authenticated': True, ...}
+```
+
+Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your `PUT` & `POST` data — but nowadays, just use the `json` method!
+
+Requests is one of the most downloaded Python packages today, pulling in around `30M downloads / week`— according to GitHub, Requests is currently [depended upon](https://github.com/psf/requests/network/dependents?package_id=UGFja2FnZS01NzA4OTExNg%3D%3D) by `1,000,000+` repositories. You may certainly put your trust in this code.
+
+[![Downloads](https://pepy.tech/badge/requests/month)](https://pepy.tech/project/requests)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/requests.svg)](https://pypi.org/project/requests)
+[![Contributors](https://img.shields.io/github/contributors/psf/requests.svg)](https://github.com/psf/requests/graphs/contributors)
+
+## Installing Requests and Supported Versions
+
+Requests is available on PyPI:
+
+```console
+$ python -m pip install requests
+```
+
+Requests officially supports Python 3.7+.
+
+## Supported Features & Best–Practices
+
+Requests is ready for the demands of building robust and reliable HTTP–speaking applications, for the needs of today.
+
+- Keep-Alive & Connection Pooling
+- International Domains and URLs
+- Sessions with Cookie Persistence
+- Browser-style TLS/SSL Verification
+- Basic & Digest Authentication
+- Familiar `dict`–like Cookies
+- Automatic Content Decompression and Decoding
+- Multi-part File Uploads
+- SOCKS Proxy Support
+- Connection Timeouts
+- Streaming Downloads
+- Automatic honoring of `.netrc`
+- Chunked HTTP Requests
+
+## API Reference and User Guide available on [Read the Docs](https://requests.readthedocs.io)
+
+[![Read the Docs](https://raw.githubusercontent.com/psf/requests/main/ext/ss.png)](https://requests.readthedocs.io)
+
+## Cloning the repository
+
+When cloning the Requests repository, you may need to add the `-c
+fetch.fsck.badTimezone=ignore` flag to avoid an error about a bad commit (see
+[this issue](https://github.com/psf/requests/issues/2690) for more background):
+
+```shell
+git clone -c fetch.fsck.badTimezone=ignore https://github.com/psf/requests.git
+```
+
+You can also apply this setting to your global Git config:
+
+```shell
+git config --global fetch.fsck.badTimezone ignore
+```
+
+---
+
+[![Kenneth Reitz](https://raw.githubusercontent.com/psf/requests/main/ext/kr.png)](https://kennethreitz.org) [![Python Software Foundation](https://raw.githubusercontent.com/psf/requests/main/ext/psf.png)](https://www.python.org/psf)
+
+
+
+
+* Other Licenses *
+MIT
+
+* Copyrights *
+MIT
+- Copyright (c) 2008-2011 Andrey Petrov and contributors (see CONTRIBUTORS.txt),
+
+* Package Info *
+
+Authors: me@kennethreitz.org
+Package Manager: Pip
+Project URL: https://requests.readthedocs.io
+Package Download URL: https://files.pythonhosted.org/packages/5f/a4/98b9c7c6428a668bf7e42ebb7c79d576a1c3c1e3ae2d47e674b468388871/requests-2.33.1.tar.gz
+Dependency Path: requests
+* Notice File(s) *
+NOTICE
+Requests
+Copyright 2019 Kenneth Reitz
+
+
+--------------------------------------------------------------------------------
+Package Title: scheduler (0.27.0)
+
+Package Locator: npm+scheduler$0.27.0
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Cooperative scheduler for the browser environment.
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- cjs/scheduler-unstable_mock.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/scheduler-unstable_mock.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/scheduler-unstable_post_task.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/scheduler-unstable_post_task.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/scheduler.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/scheduler.native.development.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/scheduler.native.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- cjs/scheduler.production.js
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- LICENSE
+  - Copyright (c)  Meta Platforms, Inc. and affiliates.
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c)  Meta Platforms, Inc. and affiliates.
+
+* Package Info *
+
+Authors: opensource+npm@fb.com, react-core@meta.com
+Package Manager: NPM
+Project URL: https://react.dev/
+Package Download URL: https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz
+Dependency Path: next > react-dom > scheduler > react-dom > scheduler
+
+--------------------------------------------------------------------------------
+Package Title: semver (7.8.5)
+
+Package Locator: npm+semver$7.8.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+The semantic version parser used by npm.
+
+* Declared Licenses *
+ISC
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c)  Isaac Z. Schlueter and Contributors
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+ISC
+- Copyright (c)  Isaac Z. Schlueter and Contributors
+
+* Package Info *
+
+Authors: npm-cli+bot@github.com, owlstronaut@github.com, reggi@github.com, saquibkhan@github.com
+Package Manager: NPM
+Project URL: https://github.com/npm/node-semver#readme
+Package Download URL: https://registry.npmjs.org/semver/-/semver-7.8.5.tgz
+Dependency Path: next > sharp > semver
+
+--------------------------------------------------------------------------------
+Package Title: sharp (0.34.5)
+
+Package Locator: npm+sharp$0.34.5
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images
+
+* Declared Licenses *
+Apache-2.0
+--------------------------------------------------------------------------------
+File matches:
+- install/build.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- install/check.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/channel.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/colour.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/composite.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/constructor.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/index.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/input.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/is.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/libvips.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/operation.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/output.js
+  - Copyright (c)  The National Gallery'
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/resize.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/sharp.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- lib/utility.js
+  - Copyright (c) 2013 Lovell Fuller and others.
+- LICENSE
+- package.json
+- README.md
+- src/binding.gyp
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/common.cc
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/common.h
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/metadata.cc
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/metadata.h
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/operations.cc
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/operations.h
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/pipeline.cc
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/pipeline.h
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/sharp.cc
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/stats.cc
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/stats.h
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/utilities.cc
+  - Copyright (c) 2013 Lovell Fuller and others.
+- src/utilities.h
+  - Copyright (c) 2013 Lovell Fuller and others.
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- lib/index.d.ts
+  - Copyright (c) 2017 François Nguyen and others.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+Apache-2.0
+- Copyright (c) 2013 Lovell Fuller and others.
+- Copyright (c)  The National Gallery'
+MIT
+- Copyright (c) 2017 François Nguyen and others.
+
+* Package Info *
+
+Authors: npm@lovell.info
+Package Manager: NPM
+Project URL: https://sharp.pixelplumbing.com/
+Package Download URL: https://registry.npmjs.org/sharp/-/sharp-0.34.5.tgz
+Dependency Path: next > sharp
+
+--------------------------------------------------------------------------------
+Package Title: shebang-command (2.0.0)
+
+Package Locator: npm+shebang-command$2.0.0
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Get the command from a shebang
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- license
+  - Copyright (c)  Kevin Mårtensson <kevinmartensson@gmail.com> (github.com/kevva)
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c)  Kevin Mårtensson <kevinmartensson@gmail.com> (github.com/kevva)
+
+* Package Info *
+
+Authors: kevinmartensson@gmail.com
+Package Manager: NPM
+Project URL: https://www.npmjs.com/package/shebang-command
+Package Download URL: https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz
+Dependency Path: cross-env > cross-spawn > shebang-command
+
+--------------------------------------------------------------------------------
+Package Title: shebang-regex (3.0.0)
+
+Package Locator: npm+shebang-regex$3.0.0
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Regular expression for matching a shebang line
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- license
+  - Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c)  Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+
+* Package Info *
+
+Authors: sindresorhus@gmail.com
+Package Manager: NPM
+Project URL: https://www.npmjs.com/package/shebang-regex
+Package Download URL: https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz
+Dependency Path: cross-env > cross-spawn > shebang-command > shebang-regex
+
+--------------------------------------------------------------------------------
+Package Title: source-map-js (1.2.1)
+
+Package Locator: npm+source-map-js$1.2.1
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Generates and consumes source maps
+
+* Declared Licenses *
+BSD-3-Clause
+--------------------------------------------------------------------------------
+File matches:
+- lib/array-set.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+- lib/base64-vlq.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+  - Copyright (c) 2011 The Closure Compiler Authors. All rights reserved.
+- lib/base64.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+- lib/binary-search.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+- lib/mapping-list.js
+  - Copyright (c) 2014 Mozilla Foundation and contributors
+- lib/quick-sort.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+- lib/source-map-consumer.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+- lib/source-map-generator.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+- lib/source-node.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+- lib/util.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+- LICENSE
+  - Copyright (c) 2009-2011 Mozilla Foundation and contributors
+- package.json
+- source-map.js
+  - Copyright (c) 2009-2011 Mozilla Foundation and contributors
+--------------------------------------------------------------------------------
+
+* Copyrights *
+BSD-3-Clause
+- Copyright (c) 2009-2011 Mozilla Foundation and contributors
+- Copyright (c) 2011 Mozilla Foundation and contributors
+- Copyright (c) 2014 Mozilla Foundation and contributors
+- Copyright (c) 2011 The Closure Compiler Authors. All rights reserved.
+
+* Package Info *
+
+Authors: v7rulnik@gmail.com
+Package Manager: NPM
+Project URL: https://github.com/7rulnik/source-map-js
+Package Download URL: https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz
+Dependency Path: next > postcss > source-map-js
+
+--------------------------------------------------------------------------------
+Package Title: styled-jsx (5.1.6)
+
+Package Locator: npm+styled-jsx$5.1.6
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Full CSS support for JSX without compromises
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- license.md
+  - Copyright (c) 2016 present Vercel, Inc.
+- package.json
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+BSD-3-Clause
+--------------------------------------------------------------------------------
+File matches:
+- dist/babel/index.js
+  - Copyright (c) 2011 Mozilla Foundation and contributors
+  - Copyright (c) 2011 The Closure Compiler Authors. All rights reserved.
+  - Copyright (c) 2014 Mozilla Foundation and contributors
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2016 present Vercel, Inc.
+BSD-3-Clause
+- Copyright (c) 2011 Mozilla Foundation and contributors
+- Copyright (c) 2011 The Closure Compiler Authors. All rights reserved.
+- Copyright (c) 2014 Mozilla Foundation and contributors
+
+* Package Info *
+
+Authors: infra+release@vercel.com, rauchg@gmail.com, timneutkens@icloud.com
+Package Manager: NPM
+Project URL: https://github.com/vercel/styled-jsx#readme
+Package Download URL: https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz
+Dependency Path: next > styled-jsx
+
+--------------------------------------------------------------------------------
+Package Title: tslib (2.8.1)
+
+Package Locator: npm+tslib$2.8.1
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Runtime library for TypeScript helper functions
+
+* Declared Licenses *
+0BSD
+--------------------------------------------------------------------------------
+File matches:
+- CopyrightNotice.txt
+  - Copyright (c)  Microsoft Corporation.
+- LICENSE.txt
+  - Copyright (c)  Microsoft Corporation.
+- package.json
+- tslib.d.ts
+  - Copyright (c)  Microsoft Corporation.
+- tslib.es6.js
+  - Copyright (c)  Microsoft Corporation.
+- tslib.es6.mjs
+  - Copyright (c)  Microsoft Corporation.
+- tslib.js
+  - Copyright (c)  Microsoft Corporation.
+--------------------------------------------------------------------------------
+
+* Copyrights *
+0BSD
+- Copyright (c)  Microsoft Corporation.
+
+* Package Info *
+
+Authors: andrew@wheream.io, mineyalc@microsoft.com, nathan@shively-sanders.com, rbuckton@chronicles.org, shkamat@microsoft.com, typescript-design@microsoft.com, typescript@microsoft.com, wwigham@gmail.com
+Package Manager: NPM
+Project URL: https://www.typescriptlang.org/
+Package Download URL: https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz
+Dependency Path: next > @swc/helpers > tslib > next > sharp > @img/sharp-wasm32 > @emnapi/runtime > tslib > react-dropzone > file-selector > tslib
+
+--------------------------------------------------------------------------------
+Package Title: urllib3 (2.7.0)
+
+Package Locator: pip+urllib3$2.7.0
+
+Package Depth: Direct
+--------------------------------------------------------------------------------
+
+HTTP library with thread-safe connection pooling, file post, and more.
+
+* Declared Licenses *
+MIT
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE.txt
+  - Copyright (c) 2008-2020 Andrey Petrov and contributors.
+--------------------------------------------------------------------------------
+
+* Other Licenses *
+MPL-2.0
+--------------------------------------------------------------------------------
+File matches:
+- test/contrib/emscripten/templates/pyodide-console.html
+  - Copyright (c) 2019-2022 Pyodide contributors and Mozilla
+--------------------------------------------------------------------------------
+
+* Copyrights *
+MIT
+- Copyright (c) 2008-2020 Andrey Petrov and contributors.
+MPL-2.0
+- Copyright (c) 2019-2022 Pyodide contributors and Mozilla
+
+* Package Info *
+
+Authors: Andrey Petrov <andrey.petrov@shazow.net>
+Package Manager: Pip
+Project URL: https://pypi.org/project/urllib3/
+Package Download URL: https://files.pythonhosted.org/packages/53/0c/06f8b233b8fd13b9e5ee11424ef85419ba0d8ba0b3138bf360be2ff56953/urllib3-2.7.0.tar.gz
+Dependency Path: urllib3
+
+--------------------------------------------------------------------------------
+Package Title: which (2.0.2)
+
+Package Locator: npm+which$2.0.2
+
+Package Depth: Transitive
+--------------------------------------------------------------------------------
+
+Like which(1) unix command. Find the first instance of an executable in the PATH.
+
+* Declared Licenses *
+ISC
+--------------------------------------------------------------------------------
+File matches:
+- LICENSE
+  - Copyright (c)  Isaac Z. Schlueter and Contributors
+- package.json
+--------------------------------------------------------------------------------
+
+* Copyrights *
+ISC
+- Copyright (c)  Isaac Z. Schlueter and Contributors
+
+* Package Info *
+
+Authors: npm-cli+bot@github.com, owlstronaut@github.com, reggi@github.com, saquibkhan@github.com
+Package Manager: NPM
+Project URL: https://github.com/npm/node-which#readme
+Package Download URL: https://registry.npmjs.org/which/-/which-2.0.2.tgz
+Dependency Path: cross-env > cross-spawn > which
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+Report Generated by FOSSA on 2026-10-7

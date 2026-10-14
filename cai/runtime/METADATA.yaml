@@ -1,0 +1,3 @@
+edition: SyntheticVideoDetector
+description: Bundled Hugging Face GPU detection and Serverless NVIDIA NVCF inference
+short_version: "1.12"

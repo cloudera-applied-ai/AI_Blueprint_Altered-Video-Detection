@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@import "./theme.css";
+
+body {
+  margin: 0;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(118, 185, 0, 0.35);
+  color: #fff;
+}
+
+input,
+textarea,
+select {
+  color-scheme: dark;
+}

@@ -1,0 +1,89 @@
+// SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION &
+// AFFILIATES. All rights reserved.
+// SPDX-License-Identifier: MIT
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the "Software"),
+// to deal in the Software without restriction, including without limitation
+// the rights to use, copy, modify, merge, publish, distribute, sublicense,
+// and/or sell copies of the Software, and to permit persons to whom the
+// Software is furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+// DEALINGS IN THE SOFTWARE.
+
+syntax = "proto3";
+
+package nvidia.maxine.syntheticvideodetector.v1;
+
+import "google/protobuf/empty.proto";
+
+// The SyntheticVideoDetectorService provides APIs to detect synthetic/fake
+// videos
+// using the Hiera-based deep learning model.
+service SyntheticVideoDetectorService {
+
+  // DetectSyntheticVideo is a bidirectional streaming API to analyze video
+  // files
+  // for synthetic/fake content detection.
+  //
+  // The input stream should contain exactly one video file per RPC invocation,
+  // split into chunks carried in the request messages. The server processes
+  // the video and streams back detection results for that file.
+  rpc DetectSyntheticVideo(stream DetectSyntheticVideoRequest)
+      returns (stream DetectSyntheticVideoResponse) {}
+}
+
+// Input message for DetectSyntheticVideo API.
+// Contains chunks of input video file data.
+message DetectSyntheticVideoRequest {
+  // Video file data chunk
+  bytes video_file_data = 1;
+}
+
+// Output message for DetectSyntheticVideo API.
+// Contains detection results or a keep alive message.
+message DetectSyntheticVideoResponse {
+  oneof stream_output {
+    // Individual clip detection result (during processing)
+    ClipResult clip_result = 1;
+
+    // Final video analysis result
+    VideoResult final_result = 2;
+
+    // Keep alive signaling flag
+    google.protobuf.Empty keepalive = 3;
+  }
+}
+
+// Detection result for individual video clip (output CSV rows)
+message ClipResult {
+  // Clip index (frame index of middle frame)
+  uint32 index = 1;
+
+  // Raw model output logit for this clip
+  float logit = 2;
+}
+
+// Final video analysis result
+message VideoResult {
+  // Final aggregated logit (tab['logit'].mean())
+  float logit = 1;
+
+  // Final probability (expit(logit))
+  float probability = 2;
+
+  // CSV data containing all clip results (index,logit format)
+  string csv_data = 3;
+
+  // Number of clips processed
+  uint32 total_clips = 4;
+}

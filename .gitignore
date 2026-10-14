@@ -1,0 +1,72 @@
+# Python
+.venv/
+.venv-nim/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+client/demos/dist/
+client/demos/.next/
+
+# Secrets and local config
+.env
+.env.local
+.cml-local.env
+cai/config/deployment_config.json
+cai/config/app_environment.env
+cai/config/runtime_endpoints.env
+cai/config/build_progress.json
+cai/config/nim_startup.json
+cai/config/build.lock
+cai/config/*_nim.env
+cai/config/*_sidecar.log
+cai/config/*_nim.log
+cai/nim_endpoints.json
+
+# Model caches (large)
+volumes/models/huggingface/
+
+# EC2 remote Docker build/push (local operator tooling — do not commit)
+scripts/aws/
+build/.ec2-secrets.env
+build/.ec2-build-remote.sh
+build/svd-build.pem
+build/ec2-builder.env
+build/ec2-build-status
+build/ec2-launch.log
+build/ec2-monitor.log
+
+# Local CAI dev loop (credentials + feedback — do not commit)
+build/.cai-dev.env
+build/.cai-feedback.log
+build/tools/
+
+# Operator / Cursor dev tooling (customers deploy via AMP + .project-metadata.yaml)
+scripts/cai/
+scripts/test_serverless_nvcf.py
+cai/amp/0_spike/
+cai/amp/1_install/test_*.py
+cai/amp/1_install/nvcf_smoke_job.py
+cai/amp/1_install/print_*.py
+cai/amp/1_install/publish_smoke_status.py
+cai/amp/1_install/run_smoke_*.py
+cai/config/nvcf_smoke_result.json
+cai/config/STATUS_*.txt
+
+# macOS
+.DS_Store
+
+# Outputs
+outputs/
+media/
+uploads/
+
+# IDE
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,52 @@
+# Cloudera Blueprint catalog metadata
+# Populate fields used by the master blueprint website and internal catalog.
+
+# --- Identity ---
+name: "Synthetic Video Detector"
+slug: "synthetic-video-detector"
+description: "Clip-level deepfake and synthetic video detection on Cloudera AI with Bundled GPU (Hugging Face) or Serverless NVCF inference."
+reprise_link: "" # Add public Reprise URL when available
+
+# --- Classification (website filters) ---
+catalog_classification:
+  - Launchable (AMP)
+launchable: true
+lifecycle_status: Active
+
+# --- Industry & alignment ---
+industry: Media
+industry_alignment: Vertical
+target_vertical: "Media integrity and trust & safety"
+
+# --- Tags (website search & browse) ---
+tags:
+  - synthetic-video-detection
+  - deepfake
+  - media-forensics
+  - hugging-face
+  - gpu
+  - cloudera-ai
+
+# --- Relationships ---
+product_mapping:
+  - Cloudera AI
+  - Cloudera Machine Learning
+model_dependencies:
+  - eftt/VideoMae-ffc23-deepfake-detector
+  - prithivMLmods/AI-vs-Deepfake-vs-Real-v2.0
+  - dima806/deepfake_vs_real_image_detection
+
+# --- Provenance ---
+publisher: cloudera
+source: Internal
+
+# --- Repository & assets ---
+public_github_link: "https://github.com/cloudera-applied-ai/AI_Blueprint_Altered-Video-Detection"
+
+# --- Ownership ---
+maintainer_name: "Kevin Talbert"
+
+# --- Dates ---
+date_created: "2026-09-08"
+date_updated: "2026-09-15"
+published_date: "2026-09-15"

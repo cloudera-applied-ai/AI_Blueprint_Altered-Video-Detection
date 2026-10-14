@@ -1,0 +1,46 @@
+name: Synthetic Video Detector
+description: |
+  Synthetic video detection on Cloudera AI Workbench. Launchpad deploys Bundled (GPU,
+  Hugging Face) or Serverless (NVIDIA NVCF) all-in-one applications.
+author: Cloudera
+specification_version: 1.0
+prototype_version: 1.12
+date: "2026-09-14"
+shared_memory_limit: 8
+
+runtimes:
+  - editor: JupyterLab
+    kernel: Python 3.13
+    edition: SyntheticVideoDetector
+    version: "1.12"
+
+tasks:
+  - type: run_session
+    name: Install Python Dependencies
+    script: cai/amp/1_install/install_dependencies.py
+    short_summary: Install blueprint Python deps and generate protobuf code
+    kernel: python3
+    cpu: 4
+    memory: 8
+
+  - type: run_session
+    name: Build UI
+    script: cai/amp/6_demo_ui/build_demo.py
+    short_summary: Build Next.js UI in the project workspace (npm ci + next build)
+    kernel: python3
+    cpu: 4
+    memory: 8
+
+  - type: start_application
+    name: Synthetic Video Detector Launchpad
+    script: cai/amp/6_demo_ui/start_demo.py
+    short_summary: Launchpad — deploy Serverless or Open Weights all-in-one applications
+    long_summary: |
+      Start the Synthetic Video Detector Launchpad. Deploy all-in-one Serverless
+      (NVCF) or Open Weights (GPU) applications from the UI. Each runtime app
+      includes the detection UI. Enable unauthenticated app access for external URLs.
+    cpu: 2
+    memory: 8
+    environment:
+      TASK_TYPE: START_APPLICATION
+      SVD_APP_ROLE: launchpad

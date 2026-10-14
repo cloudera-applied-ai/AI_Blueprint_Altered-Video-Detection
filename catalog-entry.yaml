@@ -1,0 +1,22 @@
+name: Synthetic Video Detector
+entries:
+  - title: Synthetic Video Detector on Cloudera AI
+    label: synthetic-video-detector-cai
+    short_description: |
+      Deploy Bundled GPU applications with curated Hugging Face models, or Serverless
+      NVIDIA NVCF inference (1.6 path)—each with the Detect UI via Launchpad.
+    long_description: |
+      Register runtime **SyntheticVideoDetector** v1.12 (repository Dockerfile).
+      **Bundled** — new path: HF model server + UI in one GPU pod (pick from three presets).
+      **Serverless** — same NVCF gRPC flow as release 1.6 (NGC key, function ID, CPU app).
+    image_path: "https://raw.githubusercontent.com/kevinbtalbert/Synthetic-Video-Detector-AI-Blueprint/refs/heads/main/assets/synthetic-video-detector.jpg"
+    tags:
+      - Synthetic Video Detection
+      - NVIDIA NIM
+      - Hugging Face
+      - GPU
+      - Media Forensics
+    git_url: "https://github.com/kevinbtalbert/Synthetic-Video-Detector-AI-Blueprint.git"
+    is_prototype: true
+    is_community: true
+    is_new: true
