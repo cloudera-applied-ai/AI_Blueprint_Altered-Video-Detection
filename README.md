@@ -34,9 +34,7 @@ The Synthetic Video Detector blueprint helps teams assess **clip-level synthetic
 
 ## Demo
 
-- **Catalog asset:** [assets/synthetic-video-detector.jpg](assets/synthetic-video-detector.jpg)
-- **Sample media:** [assets/real_sample_video.mp4](assets/real_sample_video.mp4) (camera footage, Seattle USA), [assets/fake_sample_video.mp4](assets/fake_sample_video.mp4) (generated with Gemini 3.6 Thinking) — two independent ~10 s clips original to this blueprint; see [assets/SAMPLE_VIDEOS_ATTRIBUTION.md](assets/SAMPLE_VIDEOS_ATTRIBUTION.md)
-- **Reprise / walkthrough:** [_https://app.getreprise.com/present/3yAMwNy_](https://app.getreprise.com/present/3yAMwNy)
+**Reprise / walkthrough:** [_https://app.getreprise.com/present/3yAMwNy_](https://app.getreprise.com/present/3yAMwNy)
 
 After deployment, open the **Bundled** or **Serverless** runtime URL → **Detect** → upload MP4 → view timeline scores and aggregate verdict.
 
