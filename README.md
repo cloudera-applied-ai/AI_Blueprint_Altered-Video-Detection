@@ -35,7 +35,7 @@ The Synthetic Video Detector blueprint helps teams assess **clip-level synthetic
 
 ## Demo
 
-**Reprise / walkthrough:** [_https://app.getreprise.com/present/3yAMwNy_](https://app.getreprise.com/present/3yAMwNy)
+**Reprise / walkthrough:** [https://app.getreprise.com/present/enrwpAX](https://app.getreprise.com/present/enrwpAX)
 
 After deployment, open the **Bundled** or **Serverless** runtime URL → **Detect** → upload MP4 → view timeline scores and aggregate verdict.
 
